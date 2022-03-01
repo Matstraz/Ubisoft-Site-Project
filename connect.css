@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* SEZIONE HEADER GREY */
+.header_grey{
+    display: flex;
+    height: 100%;
+    background-color: #242424;
+    padding: 0.5em;
+}
+
+#ubisoft_logo{
+    height: 1.8em;
+    width: 6em;
+    margin-left: 1em;
+   
+}
+
+#picture_header_grey{
+    width: 2.72em;
+    background-color: white;
+    position:absolute;
+    top: 0.2px;
+    right: 0%;
+    border: 9px solid black;
+    cursor: pointer;
+}
