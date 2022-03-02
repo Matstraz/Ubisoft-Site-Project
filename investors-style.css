@@ -1,9 +1,16 @@
 /*GENERAL*/
+@font-face { font-family: Ubisoft Sans; src: url(/Ubisoft-font/fonts/ubisoftsans-regular.otf); }
+@font-face { font-family: Ubisoft Sans; font-weight: bold; src: url(/Ubisoft-font/fonts/ubisoftsans-bold.otf);}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Ubisoft Sans", sans-serif;
+}
+
+a{
+    text-decoration: none;
 }
 
 /*HEADER*/
@@ -51,9 +58,9 @@
   top: 0px;
 }
 
-/*Main*/
+/*MAIN*/
 
-/*main image*/
+/*sec*/
 
 .hero{
     color: white;
@@ -78,8 +85,6 @@
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-/*Section*/
-
 .bar3{
    color: rgb(13, 61, 218);
    text-align: center;
@@ -88,4 +93,87 @@
 .bar3 li{
    border-right: 3px solid black;
    padding-right: 5px;
+}
+
+/*Sec2*/
+.big_container{
+    margin: 80px 80px 50px 80px;
+}
+
+.leftbox, .rightbox{
+    height: 65vh;
+    width: 45%;
+}
+
+.graycontent{
+    height: 55vh;
+    width: 100%;
+    background-color: rgba(211, 211, 211, 0.4);
+    padding-top: 40px;
+    border: solid black 1px;
+}
+
+.leftbox{
+   float: left;
+}
+
+.rightbox{
+    float: right;
+}
+
+.big_container::after{
+    clear: both;
+    content: '';
+    display: table;
+}
+
+.sec2 h2{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 700;
+    padding-bottom: 27px;
+}
+
+.graycontent h3{
+    font-size: 22px;
+    font-weight: 700;
+    padding-left: 40px;
+}
+
+.graycontent h4{
+    color: rgb(87, 87, 240);
+    display: inline-block;
+}
+
+.sx{
+    float: left;
+}
+
+.fianco{
+    float: left;
+    padding-left: 15px;
+    font-weight: bold;
+}
+
+.sotto {
+    display: block;
+    font-size: small;
+    padding-top: 5px;
+}
+
+.pdfsolution::after{
+    clear: both;
+    content: '';
+    display: table;
+}
+
+.pdfsolution{
+    margin-left: 40px;
+    margin-top: 25px;
+    margin-right: 60px;
+    padding: 25px;
+}
+
+.pdfsolution:hover{
+    background-color: rgba(104, 101, 101, 0.1);
 }
