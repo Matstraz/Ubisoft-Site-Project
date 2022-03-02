@@ -1,0 +1,91 @@
+/*GENERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*HEADER*/
+
+.mainbar li, .mainbar ul {
+    display: inline;
+    height: 5.5vh;
+    font-size: medium;
+    font-weight: bold;
+    line-height: 5.5vh;
+}
+
+
+.bar2{
+    background-color: white;
+    color: rgb(204, 37, 176);
+    padding-left: 25px;
+
+}
+
+.bar2 li{
+    margin-right: 50px;
+}
+
+.bar1{
+    background-color: black;
+    color: white;
+    position: relative;
+}
+
+.centralbar{
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+
+.centralbar li{
+    width: 25%;
+    margin: auto;
+}
+
+.barright{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+/*Main*/
+
+/*main image*/
+
+.hero{
+    color: white;
+    background-image: url(/images/Eivor_female.webp);
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+}   
+
+.opacità{
+
+    height: 60vh;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/*Section*/
+
+.bar3{
+   color: rgb(13, 61, 218);
+   text-align: center;
+}
+
+.bar3 li{
+   border-right: 3px solid black;
+   padding-right: 5px;
+}
