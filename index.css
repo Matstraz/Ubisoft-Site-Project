@@ -1,4 +1,4 @@
-/* !! RESET */
+/* !! GENERAL */
 html {
   font-size: 62.5%; /* 10 px */
 }
@@ -7,6 +7,40 @@ html {
   margin: 0;
   padding: 0;
 }
+
+.section__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 3rem;
+  gap: 4rem;
+}
+
+.section__body h2 {
+  font-size: 4rem;
+}
+
+.section__body h3 {
+  font-size: 3rem;
+}
+
+.container__3-card {
+  display: flex;
+  justify-content: space-around;
+  gap: 3rem;
+  width: 100%;
+}
+
+.container__3-card h4 {
+  color: white;
+  text-align: center;
+}
+
+.img__flex {
+  width: 100%;
+}
+
 /* !! END RESET */
 /* !! NAV */
 .nav__top {
@@ -68,7 +102,6 @@ color: white; */
 }
 .hero__title p {
   font-size: 3rem;
-  font-weight: ;
 }
 .button-container {
   display: flex;
@@ -101,4 +134,119 @@ color: white; */
 }
 .button-bottom-container img {
   padding-bottom: 5rem;
+}
+
+/* !!END HERO */
+/* !! CAROSELLO */
+
+.container__carosello {
+  display: flex;
+  gap: 1rem;
+}
+
+/* !!END CAROSELLO */
+/* !! UBISOFT STORE */
+
+.container__store {
+  width: 100%;
+  height: 50rem;
+  background-size: cover;
+  background-position: center;
+}
+
+#store-container-1 {
+  background-image: url(https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1w2jXUMssIuYm0JoKJsnyI/049554e60c70fd920c74c28562dc425c/ubihome-store-promo-r6extraction.jpg);
+}
+
+#store-container-2 {
+  background-image: url(https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7kFF0mX8o7alfFN22cA9HL/7722f1fabe6f67bf351d96626a57ecd1/Ubidotcom_ac-dor-nov21_908x1080_NAM-EN.jpg);
+}
+
+#store-container-3 {
+  background-image: url(https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3pFus6wBxafdQ7iY7WSBRS/439a0dc9efb9bb8b91b42c70753ad9a7/ubi_ac-sale-feb22-valfav-908x1080.jpg);
+}
+
+/* !!UBISOFT STORE */
+/* !! INSIDE UBISOFT */
+
+.section__body--inside {
+  background-color: #f0f3f4;
+}
+
+.container__inside {
+  width: 100%;
+  height: 40rem;
+  background-size: cover;
+  background-position: center;
+}
+
+#inside-container-1 {
+  background-image: url(https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1eols1lZ8UPudehGH9BGhD/51f5bfa760888011d318a8fe309e34c0/ubi-inside_ubisoft-inclusive-workplace.jpg);
+}
+#inside-container-2 {
+  background-image: url(https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2hIEL2YM0y7GZuq1wuwy7P/91ddea7c1dcb5362abcbd55c8424c176/ubi-inside_ubisoft-greenweeks.jpg);
+}
+#inside-container-3 {
+  background-image: url(https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6peGPMWPvJS6d2XpHsP5V1/697300a6e1cfac9ff755ec1bfed452b8/ubi-inside_ubisoft-fawzi_mesmar.jpg);
+}
+
+/* !!END UBISOFT STORE */
+/* !!UBISOFT CONNECT*/
+
+.section__body--connect {
+  display: flex;
+  background-color: #091225;
+  align-items: center;
+}
+
+.section__body--connect img {
+  width: 40%;
+}
+
+.container__connect {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.container__connect h2 {
+  font-size: 5rem;
+}
+
+.container__connect h4 {
+  font-size: 2rem;
+}
+
+/* !!END UBISOFT CONNEC */
+/* !!FOOTER*/
+
+footer {
+  background-color: rgb(29, 30, 34);
+}
+
+.nav__footer {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.nav__footer span {
+  color: rgb(183, 183, 183);
+  font-size: 1.2rem;
+}
+
+.container__icons {
+  display: flex;
+  gap: 3rem;
+}
+
+.container__icons img {
+  width: 2.5rem;
+}
+
+.content {
+  width: 13rem;
 }
