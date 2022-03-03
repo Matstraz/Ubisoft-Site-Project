@@ -1,101 +1,130 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing:border-box;
-    text-decoration: none;
-    list-style: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* SEZIONE HEADER GREY */
-.header_grey{
-    display: flex;
-    height: 100%;
-    background-color: #242424;
-    padding: 0.5em;
+.header_grey {
+  display: flex;
+  height: 3.1em;
+  background-color: #242424;
+  align-items: center;
+  justify-content: space-between;
 }
 
-#ubisoft_logo{
-    height: 1.8em;
-    width: 6em;
-    margin-left: 1em;
-   
+#ubisoft_logo {
+  height: 1.8em;
+  width: 6em;
+  margin-left: 2em;
 }
 
-#picture_header_grey{
-    width: 2.72em;
-    background-color: white;
-    position:absolute;
-    top: 0.2px;
-    right: 0%;
-    border: 9px solid black;
-    cursor: pointer;
+#picture_header_grey {
+  width: 3.1em;
+  background-color: white;
+  border: 9px solid black;
+  cursor: pointer;
 }
-
 
 /* SEZIONE HEADER BLACK */
 
-.header_black{
-    display: flex;
-    background-color: #0d0d0d;
-    height: 3.35em;
-    align-items: center;
-    
+.header_black {
+  display: flex;
+  background-color: #0d0d0d;
+  height: 3.75em;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.header_black h1{
-    color: white;
-    margin-left: 1em;
+.header_black h1 {
+  color: white;
+  margin-left: 1em;
 }
 
-.header_black span{
-    font-weight: 300;
+.header_black span {
+  font-weight: 300;
 }
 
-.navigation{
-    display: inline-flex;
-    margin-left: 2.8em;
-    
+.button_inner_parent {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
 }
 
-.navigation li{
-    margin-right: 1em;
-    color: #999999;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.nowrap {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  color: white;
+  align-items: center;
+  margin-left: 0.7em;
 }
 
-button, .select-language select:hover{
-    cursor:pointer;
-}   
-
-#login_button{
-position:absolute;
-top: 3.8em;
-right: 12.5%;
-background-color: #e5e5e5;
-padding: 0.6em 25px 0.8em 25px;
-border-color: #e5e5e5;
-border-radius: 20px;
-color: black;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-font-weight: 900;
-    
+.nowrap h1 {
+  font-size: 1.4em;
 }
 
-#download_button{
-position:absolute;
-top: 3.8em;
-right: 1%;
-background-color: #006ef5;
-padding: 0.6em 40px 0.8em 40px;
-border: 1px solid transparent;
-border-color: #006ef5;
-border-radius: 20px;
-color:white;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-font-weight: 900;
+.nowrap span {
+  font-weight: 200;
+  font-size: 1.4em;
+  padding-left: 7px;
+}
 
+.navigation {
+  display: flex;
+  margin-left: 2.8em;
+}
+
+.navigation li {
+  margin-right: 1.7em;
+  color: #999999;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+}
+
+.buttons_header_black {
+  display: flex;
+  flex-direction: row;
+  margin-right: 2em;
+}
+
+button,
+.select-language select:hover {
+  cursor: pointer;
+}
+
+/* BUTTONS AREA */
+#login_button {
+  top: 3.8em;
+  right: 12.5%;
+  background-color: #e5e5e5;
+  padding: 0.6em 25px 0.8em 25px;
+  border: 1px solid transparent;
+  border-color: #e5e5e5;
+  border-radius: 20px;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+  margin-right: 1.2em;
+}
+
+#download_button {
+  top: 3.8em;
+  right: 1%;
+  background-color: #006ef5;
+  padding: 0.9em 30px 0.9em 30px;
+  border: 1px solid transparent;
+  border-color: #006ef5;
+  border-radius: 20px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
 }
