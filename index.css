@@ -1,0 +1,104 @@
+/* !! RESET */
+html {
+  font-size: 62.5%; /* 10 px */
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* !! END RESET */
+/* !! NAV */
+.nav__top {
+  position: fixed;
+  top: 0;
+  height: 5rem;
+  display: flex;
+  background-color: black;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+}
+.nav__logo {
+  height: 4rem;
+}
+.nav__img {
+  height: 3rem;
+  margin-left: 2rem;
+}
+.nav__button {
+  color: white;
+  background-color: inherit;
+  font-size: 1.5rem;
+  font-weight: 800;
+  padding: 1.6rem 3rem;
+  border: none;
+}
+.nav__button:hover {
+  background-color: white;
+  color: black;
+}
+/* !!END NAV */
+/* !! HERO */
+.section__hero {
+  margin-top: 5rem;
+  background-image: url(https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1CD1FKNVA0FaGx56GDc09l/6e51f33ecc24a7bf22e99743aacaa1e4/ubi-homescreen-r6s-y7s1-teaser-keyart-bg-desktop2.jpg);
+  background-size: cover;
+  display: flex;
+  height: 60rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 7rem;
+}
+/* .section__hero h1 {
+  color: white;
+}
+.section__hero p {
+}
+color: white; */
+.hero__title {
+  text-align: center;
+  color: white;
+}
+.hero__title h1 {
+  font-size: 6rem;
+  font-weight: 800;
+}
+.hero__title p {
+  font-size: 3rem;
+  font-weight: ;
+}
+.button-container {
+  display: flex;
+  gap: 3rem;
+}
+.hero-button {
+  background-color: #167394;
+  color: white;
+  border-radius: 3rem;
+  border: none;
+  padding: 2rem 2rem;
+  letter-spacing: 1px;
+  width: 24rem;
+  font-size: 1.5rem;
+}
+.button-bottom-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: flex-end;
+}
+.button-bottom-container button {
+  width: 15%;
+  background: none;
+  border: none;
+  color: rgb(188, 185, 185);
+  font-size: 2rem;
+  font-weight: 800;
+  padding-bottom: 3rem;
+}
+.button-bottom-container img {
+  padding-bottom: 5rem;
+}

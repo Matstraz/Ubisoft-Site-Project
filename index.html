@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="index.css">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,9 +9,9 @@
   </head>
   <body>
     <header>
-      <nav style="background-color: black;">
+      <nav class="nav__top">
         <a href="#">
-          <img style="height: 40px;"
+          <img class="nav__logo"
             src="https://startselect.zendesk.com/hc/article_attachments/360010998037/Ubisoft.jpg"
             alt="Logo Ubisoft"
           />
@@ -18,18 +19,18 @@
         <!-- logo -->
         <div>
           <!-- menu -->
-          <button>PLAY</button>
-          <button>SHOP</button>
-          <button>EXPLORE</button>
-          <button>HELP</button>
+          <button class="nav__button">PLAY</button>
+          <button class="nav__button">SHOP</button>
+          <button class="nav__button">EXPLORE</button>
+          <button class="nav__button">HELP</button>
         </div>
         <div>
           <!-- ricerca e utente -->
-          <img style="height: 40px;"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCaMTdieeKpgm6y8JHWGbwYLT8pTUvluCspvOFSWEo5Hmdako9h70OmnDec-xFlufDLSw&usqp=CAU"
-            alt=""
+          <img class="nav__img"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCaMTdieeKpgm6y8JHWGbwYLT8pTUvluCspvOFSWEo5Hmdako9h70OmnDec-xFlufDLSw&usqp=CAU"
+          alt=""
           />
-          <img style="height: 40px;"
+          <img class="nav__img"
             src="https://loredanavistarini.it/wp-content/uploads/2020/01/136-1366211_group-of-10-guys-login-user-icon-png.png"
             alt=""
           />
@@ -37,23 +38,19 @@
       </nav>
     </header>
     <main>
-      <section
-        style="
-          background-image: url(https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1CD1FKNVA0FaGx56GDc09l/6e51f33ecc24a7bf22e99743aacaa1e4/ubi-homescreen-r6s-y7s1-teaser-keyart-bg-desktop2.jpg); 
-          text-align: center;
-          padding: 100px 0;
-        "
-      >
+      <section class="section__hero">
         <!-- HERO -->
-        <h1 style="color: white; ">DEMON VEIL</h1>
-        <p style="color: white;">
+        <div class="hero__title">
+        <h1>DEMON VEIL</h1>
+        <p>
           Rainbow Six Siege introduces the first season of Year 7, Demon Veil.
         </p>
-        <div>
-          <button>GAMEPLAY TRAILER</button>
-          <button>MORE INFO</button>
+      </div>
+        <div class="button-container">
+          <button class="hero-button">GAMEPLAY TRAILER</button>
+          <button class="hero-button">MORE INFO</button>
         </div>
-        <div>
+        <div class="button-bottom-container">
           <button>FAR CRY 6</button>
           <button>UBISOFT +</button>
           <button>
