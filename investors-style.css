@@ -13,21 +13,41 @@ a{
     text-decoration: none;
 }
 
+a:visited{
+    color: unset;
+}
+
 /*HEADER*/
 
-.mainbar li, .mainbar ul {
+.mainbar{
+    height: 7vh;
+}
+
+.mainbar li{
     display: inline;
-    height: 5.5vh;
     font-size: medium;
     font-weight: bold;
-    line-height: 5.5vh;
+    line-height: 7vh;
+}
+
+.barright1, .barright2, .barleft, .centralbar{
+    height: 100%;
+    position: relative;
+}
+
+.barright1 img, .barright2 img, .barleft img{
+    height: 65%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
 }
 
 
 .bar2{
     background-color: white;
-    color: rgb(204, 37, 176);
-    padding-left: 25px;
+    color: rgb(204, 37, 120);
+    padding-left: 8%;
 
 }
 
@@ -38,29 +58,38 @@ a{
 .bar1{
     background-color: black;
     color: white;
-    position: relative;
 }
 
 .centralbar{
     text-align: center;
-    width: 70%;
-    margin: auto;
+    float: left;
+    width: 80%;
 }
 
 .centralbar li{
-    width: 25%;
+    display: inline-block;
+    width: 9.5%; 
     margin: auto;
 }
 
-.barright{
-  position: absolute;
-  right: 0px;
-  top: 0px;
+.barleft{
+    float: left;
+    width: 10%;
+}
+
+.barright1{
+    float: left;
+    width: 5%;
+}
+
+.barright2{
+    float: left;
+    width: 5%;
 }
 
 /*MAIN*/
 
-/*sec*/
+/*sec1*/
 
 .hero{
     color: white;
@@ -76,7 +105,7 @@ a{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 50px;
+    font-size: 52px;
 }   
 
 .opacità{
@@ -86,31 +115,34 @@ a{
 }
 
 .bar3{
-   color: rgb(13, 61, 218);
+   color: rgb(87, 115, 240);
    text-align: center;
+   margin-top: 20px;
+   
 }
 
 .bar3 li{
    border-right: 3px solid black;
    padding-right: 5px;
+   font-size: large;
 }
 
 /*Sec2*/
+
 .big_container{
     margin: 80px 80px 50px 80px;
 }
 
 .leftbox, .rightbox{
     height: 65vh;
-    width: 45%;
+    width: 49%;
 }
 
 .graycontent{
     height: 55vh;
     width: 100%;
-    background-color: rgba(211, 211, 211, 0.4);
+    background-color: rgba(247, 247, 247, 0.986);
     padding-top: 40px;
-    border: solid black 1px;
 }
 
 .leftbox{
@@ -129,19 +161,21 @@ a{
 
 .sec2 h2{
     text-align: center;
-    font-size: xx-large;
+    font-size: 35px;
     font-weight: 700;
     padding-bottom: 27px;
 }
 
 .graycontent h3{
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 700;
-    padding-left: 40px;
+    padding-left: 35px;
+    margin-bottom: 30px;
+    margin-top: 15px;
 }
 
 .graycontent h4{
-    color: rgb(87, 87, 240);
+    color: rgb(87, 115, 240);
     display: inline-block;
 }
 
@@ -152,13 +186,15 @@ a{
 .fianco{
     float: left;
     padding-left: 15px;
+    font-size: 18px;
     font-weight: bold;
 }
 
 .sotto {
     display: block;
-    font-size: small;
+    font-size: 14px;
     padding-top: 5px;
+    font-weight: 100;
 }
 
 .pdfsolution::after{
@@ -168,9 +204,10 @@ a{
 }
 
 .pdfsolution{
-    margin-left: 40px;
-    margin-top: 25px;
+    margin-left: 35px;
+    margin-top: 0px;
     margin-right: 60px;
+    margin-bottom: 0px;
     padding: 25px;
 }
 
