@@ -143,7 +143,42 @@ color: white; */
   display: flex;
   gap: 1rem;
 }
-
+.container__3-card h3 {
+  /* stile titoli carosello */
+  font-size: 1.8rem;
+  font-weight: 800;
+  padding: 1rem 0;
+}
+.container__3-card picture {
+  /* flex per allineare tutte le icon in basso */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#img1_car {
+  /* style icon console */
+  width: 1.5rem;
+}
+#img2_car {
+  /* style icon console */
+  width: 1.6rem;
+}
+#button_carosello {
+  /* style bottone carosello */
+  background-color: rgb(204, 0, 118);
+  color: white;
+  font-size: 1.5rem;
+  padding: 2rem 5rem;
+  border-radius: 3rem;
+  border: 0.3rem solid rgb(204, 0, 118);
+}
+#button_carosello:hover {
+  /* hover style bottone carosello, manca effetto dissolvenza dal centro */
+  background-color: white;
+  color: rgb(204, 0, 118);
+  border: 0.3rem solid rgb(204, 0, 118);
+  transition: 0.3s;
+}
 /* !!END CAROSELLO */
 /* !! UBISOFT STORE */
 
