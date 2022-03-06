@@ -13,6 +13,7 @@ body {
 /* SEZIONE HEADER GREY */
 .header_grey {
   display: flex;
+  width: 100%;
   height: 3.1em;
   background-color: #242424;
   align-items: center;
@@ -38,6 +39,7 @@ body {
   display: flex;
   background-color: #0d0d0d;
   height: 3.75em;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
 }
@@ -88,6 +90,7 @@ body {
   color: #999999;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 15px;
+  width: 100%;
 }
 
 .buttons_header_black {
@@ -101,7 +104,7 @@ button,
   cursor: pointer;
 }
 
-/* BUTTONS AREA */
+/* !BUTTONS HEADER BLACK */
 #login_button {
   top: 3.8em;
   right: 12.5%;
@@ -128,3 +131,259 @@ button,
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 900;
 }
+
+/* ! HERO 2 */
+.bg_img2 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #0a1626;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.bg_img2_text {
+  text-align: center;
+  width: 50%;
+}
+
+.bg_img2_text h1 {
+  font-size: 64px;
+  font-weight: 700;
+  margin-top: 2.5em;
+  background: linear-gradient(90deg, #eb148a, #2824e6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg_img2_text p {
+  margin-top: 2.5em;
+  margin-bottom: -1.2em;
+  color: #d6d6d6;
+}
+
+.bg_img2_text p > a {
+  color: #006ef5;
+}
+
+.bg_img2_buttons {
+  margin-top: 2.5em;
+}
+
+#download_pc,
+#download_app_store,
+#google_play {
+  display: inline-flex;
+  padding: 1em 1.5em 1em 1.5em;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  border: transparent;
+  margin-right: 2em;
+  margin-top: 2em;
+}
+
+#download_pc {
+  background-image: url(images/download_pc.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 11em;
+  height: 3.6em;
+  border: 1px solid white;
+}
+
+#download_app_store {
+  background-image: url(images/download_app_store.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 11em;
+  height: 3.6em;
+  border: 1px solid white;
+}
+
+#google_play {
+  background-image: url(images/google_play.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 11em;
+  height: 3.6em;
+  border: 1px solid white;
+}
+
+.fourstackicons {
+  display: flex;
+  gap: 1.8em;
+  justify-content: center;
+  margin-top: 3em;
+}
+
+/* IMAGE 1 and IMAGE TEXT */
+.image1 {
+  background: linear-gradient(
+    120deg,
+    rgba(0, 39, 85, 0.6) 25%,
+    rgba(253, 126, 20, 0.2) 75%
+  );
+  display: flex;
+  flex-direction: column;
+  width: 16.25rem;
+  height: 15rem;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #e5e5e5;
+  border-radius: 1.3em;
+  border: 1px solid #333;
+}
+
+.image1 > img {
+  width: 63px;
+  margin-top: -3em;
+}
+
+.image1 > p {
+  font-size: 18px;
+  text-align: center;
+  padding: 0 10px;
+}
+
+/* IMAGE 2 and IMAGE TEXT */
+.image2 {
+  background: linear-gradient(
+    317deg,
+    rgba(6, 190, 236, 0.2) 5%,
+    rgba(0, 6, 36, 0.3) 75%
+  );
+  display: flex;
+  flex-direction: column;
+  width: 16.25rem;
+  height: 15rem;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #e5e5e5;
+  border-radius: 1.3em;
+  border: 1px solid #333;
+}
+
+.image2 > img {
+  width: 63px;
+  margin-top: -3em;
+}
+
+.image2 > p {
+  font-size: 18px;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.image3 {
+  background: linear-gradient(
+    45deg,
+    rgba(18, 48, 47, 1) 35%,
+    rgba(0, 6, 36, 0.3) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  width: 16.25rem;
+  height: 15rem;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #e5e5e5;
+  border-radius: 1.3em;
+  border: 1px solid #333;
+}
+
+.image3 img {
+  width: 63px;
+  margin-top: -3em;
+}
+
+.image3 p {
+  font-size: 18px;
+  text-align: center;
+  padding: 0 25px;
+}
+
+.image4 {
+  background: rgb(0, 39, 245);
+  background: linear-gradient(
+    120deg,
+    rgba(0, 39, 85, 1) 35%,
+    rgba(253, 126, 20, 0.3) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  width: 16.25rem;
+  height: 15rem;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #e5e5e5;
+  border-radius: 1.3em;
+  border: 1px solid #333;
+}
+
+.image4 img {
+  width: 63px;
+  margin-top: -3em;
+}
+
+.image4 p {
+  font-size: 18px;
+  text-align: center;
+  padding: 0 10px;
+}
+
+/* HERO 3 PAGE */
+.bg-cover {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(180deg, #0d0d0d 0.79%, rgba(13, 13, 13, 0) 23.87%),
+    radial-gradient(
+      100.72% 66.36% at left center,
+      #4d2814 0,
+      rgba(79, 38, 23, 0.6) 26.72%,
+      rgba(96, 23, 54, 0) 72.51%
+    );
+  background: linear-gradient(
+    123deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(10, 22, 38, 1) 45%
+  );
+}
+
+.bg-third__text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+}
+
+.bg-third__text h3 {
+  color: white;
+  padding: 1em;
+}
+
+.bg-third__text p,
+small {
+  color: #d6d6d6;
+}
+
+.bg-cover-image {
+  width: 50%;
+}
+
+.bg-cover-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+/* HERO 4 PAGE */
