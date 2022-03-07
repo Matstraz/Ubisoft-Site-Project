@@ -177,7 +177,20 @@ color: white; */
   background-color: white;
   color: rgb(204, 0, 118);
   border: 0.3rem solid rgb(204, 0, 118);
-  transition: 0.3s;
+  transition: 0.3s ease 0.1s;
+  /* top: 50%;
+  left: 50%; */
+  /*  transform: translateX(-50%);
+  transform: translateY(-50%); */
+  /*   position: absolute;
+ */
+}
+.container_carosello_bottom {
+  /* accorpiamo titolo e icone console, in modo da avere tutti gli elementi del carosello in linea */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 /* !!END CAROSELLO */
 /* !! UBISOFT STORE */
