@@ -54,6 +54,15 @@ html {
   align-items: center;
   padding: 0 5rem;
 }
+
+#expand-toggle {
+  display: none;
+}
+
+.mobile__icon {
+  display: none;
+}
+
 .nav__logo {
   height: 4rem;
 }
@@ -297,4 +306,46 @@ footer {
 
 .content {
   width: 13rem;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+  .section__hero {
+    overflow: hidden;
+  }
+
+  .mobile__icon {
+    display: block;
+    width: 2rem;
+    stroke: white;
+  }
+
+  .nav__buttons {
+    display: none;
+  }
+
+  .nav__img--lens {
+    display: none;
+  }
+
+  #expand-toggle:checked ~ .nav__buttons {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    top: 5rem;
+    left: 0rem;
+    width: 100%;
+    overflow: scroll;
+  }
+
+  .nav__button {
+    border-top: 1px solid lightgray;
+    padding: 2.6rem 0;
+  }
+
+  .nav__button:last-child {
+    border-bottom: 1px solid lightgray;
+  }
 }

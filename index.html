@@ -10,6 +10,23 @@
   <body>
     <header>
       <nav class="nav__top">
+        <input type="checkbox" id="expand-toggle" />
+        <label for="expand-toggle" id="expand-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 mobile__icon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+            />
+          </svg>
+        </label>
         <a href="#">
           <img
             class="nav__logo"
@@ -18,7 +35,7 @@
           />
         </a>
         <!-- logo -->
-        <div>
+        <div class="nav__buttons">
           <!-- menu -->
           <button class="nav__button">PLAY</button>
           <button class="nav__button">SHOP</button>
@@ -28,7 +45,7 @@
         <div>
           <!-- ricerca e utente -->
           <img
-            class="nav__img"
+            class="nav__img nav__img--lens"
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCaMTdieeKpgm6y8JHWGbwYLT8pTUvluCspvOFSWEo5Hmdako9h70OmnDec-xFlufDLSw&usqp=CAU"
             alt=""
           />
@@ -78,20 +95,20 @@
               alt="Just dance 2022 logo"
             />
             <div class="container_carosello_bottom">
-            <h3>Just Dance 2022</h3>
-            <div>  
-              <img id="img1_car"
-               
-                src="https://d29fhpw069ctt2.cloudfront.net/icon/image/38677/preview2.png"
-                alt="nintendo switch logo"
-              />
-              <img id="img2_car"
-                
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrBjUaVkaH2SrSujmVca4WHMhpkXZ7BgeKH31u7fN03eYY-KGIPN-TDk19wZ6QDHR8jmo&usqp=CAU"
-                alt="xbox logo"
-              />
+              <h3>Just Dance 2022</h3>
+              <div>
+                <img
+                  id="img1_car"
+                  src="https://d29fhpw069ctt2.cloudfront.net/icon/image/38677/preview2.png"
+                  alt="nintendo switch logo"
+                />
+                <img
+                  id="img2_car"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrBjUaVkaH2SrSujmVca4WHMhpkXZ7BgeKH31u7fN03eYY-KGIPN-TDk19wZ6QDHR8jmo&usqp=CAU"
+                  alt="xbox logo"
+                />
+              </div>
             </div>
-          </div>
           </picture>
           <picture>
             <!-- rainbow -->
@@ -101,20 +118,20 @@
               alt="Rainbow Six Extraction logo"
             />
             <div class="container_carosello_bottom">
-            <h3>Rainbow Six Extraction</h3>
-            <div>
-              <img
-                id="img1_car"
-                src="https://d29fhpw069ctt2.cloudfront.net/icon/image/38677/preview2.png"
-                alt="nintendo switch logo"
-              />
-              <img
-                width="16px"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrBjUaVkaH2SrSujmVca4WHMhpkXZ7BgeKH31u7fN03eYY-KGIPN-TDk19wZ6QDHR8jmo&usqp=CAU"
-                alt="xbox logo"
-              />
+              <h3>Rainbow Six Extraction</h3>
+              <div>
+                <img
+                  id="img1_car"
+                  src="https://d29fhpw069ctt2.cloudfront.net/icon/image/38677/preview2.png"
+                  alt="nintendo switch logo"
+                />
+                <img
+                  width="16px"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrBjUaVkaH2SrSujmVca4WHMhpkXZ7BgeKH31u7fN03eYY-KGIPN-TDk19wZ6QDHR8jmo&usqp=CAU"
+                  alt="xbox logo"
+                />
+              </div>
             </div>
-          </div>
           </picture>
           <picture>
             <!-- riders republic -->
@@ -124,20 +141,20 @@
               alt="Riders republic logo"
             />
             <div class="container_carosello_bottom">
-            <h3>Riders Republic</h3>
-            <div>
-              <img
-                id="img1_car"
-                src="https://d29fhpw069ctt2.cloudfront.net/icon/image/38677/preview2.png"
-                alt="nintendo switch logo"
-              />
-              <img
-                width="16px"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrBjUaVkaH2SrSujmVca4WHMhpkXZ7BgeKH31u7fN03eYY-KGIPN-TDk19wZ6QDHR8jmo&usqp=CAU"
-                alt="xbox logo"
-              />
+              <h3>Riders Republic</h3>
+              <div>
+                <img
+                  id="img1_car"
+                  src="https://d29fhpw069ctt2.cloudfront.net/icon/image/38677/preview2.png"
+                  alt="nintendo switch logo"
+                />
+                <img
+                  width="16px"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrBjUaVkaH2SrSujmVca4WHMhpkXZ7BgeKH31u7fN03eYY-KGIPN-TDk19wZ6QDHR8jmo&usqp=CAU"
+                  alt="xbox logo"
+                />
+              </div>
             </div>
-          </div>
           </picture>
           <picture>
             <!-- far cry 6 -->
@@ -147,20 +164,20 @@
               alt="Far Cry 6 logo"
             />
             <div class="container_carosello_bottom">
-            <h3>Far Cry 6</h3>
-            <div>
-              <img
-                id="img1_car"
-                src="https://d29fhpw069ctt2.cloudfront.net/icon/image/38677/preview2.png"
-                alt="nintendo switch logo"
-              />
-              <img
-                id="img2_car"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrBjUaVkaH2SrSujmVca4WHMhpkXZ7BgeKH31u7fN03eYY-KGIPN-TDk19wZ6QDHR8jmo&usqp=CAU"
-                alt="xbox logo"
-              />
+              <h3>Far Cry 6</h3>
+              <div>
+                <img
+                  id="img1_car"
+                  src="https://d29fhpw069ctt2.cloudfront.net/icon/image/38677/preview2.png"
+                  alt="nintendo switch logo"
+                />
+                <img
+                  id="img2_car"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrBjUaVkaH2SrSujmVca4WHMhpkXZ7BgeKH31u7fN03eYY-KGIPN-TDk19wZ6QDHR8jmo&usqp=CAU"
+                  alt="xbox logo"
+                />
+              </div>
             </div>
-          </div>
           </picture>
           <picture>
             <!-- mario + rabbids -->
@@ -170,20 +187,20 @@
               alt="Mario + Rabbids Sparks of Hope logo"
             />
             <div class="container_carosello_bottom">
-            <h3>Mario + Rabbids Sparks of Hope</h3>
-            <div>
-              <img
-                id="img1_car"
-                src="https://d29fhpw069ctt2.cloudfront.net/icon/image/38677/preview2.png"
-                alt="nintendo switch logo"
-              />
-              <img
-              id="img2_car"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrBjUaVkaH2SrSujmVca4WHMhpkXZ7BgeKH31u7fN03eYY-KGIPN-TDk19wZ6QDHR8jmo&usqp=CAU"
-                alt="xbox logo"
-              />
+              <h3>Mario + Rabbids Sparks of Hope</h3>
+              <div>
+                <img
+                  id="img1_car"
+                  src="https://d29fhpw069ctt2.cloudfront.net/icon/image/38677/preview2.png"
+                  alt="nintendo switch logo"
+                />
+                <img
+                  id="img2_car"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrBjUaVkaH2SrSujmVca4WHMhpkXZ7BgeKH31u7fN03eYY-KGIPN-TDk19wZ6QDHR8jmo&usqp=CAU"
+                  alt="xbox logo"
+                />
+              </div>
             </div>
-          </div>
           </picture>
           <picture>
             <!-- assassins creed valhalla -->
@@ -193,20 +210,20 @@
               alt="Assassin's Creed Valhalla logo"
             />
             <div class="container_carosello_bottom">
-            <h3>Assassin's Creed Valhalla</h3>
-            <div>
-              <img
-                id="img1_car"
-                src="https://d29fhpw069ctt2.cloudfront.net/icon/image/38677/preview2.png"
-                alt="nintendo switch logo"
-              />
-              <img
-              id="img2_car"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrBjUaVkaH2SrSujmVca4WHMhpkXZ7BgeKH31u7fN03eYY-KGIPN-TDk19wZ6QDHR8jmo&usqp=CAU"
-                alt="xbox logo"
-              />
+              <h3>Assassin's Creed Valhalla</h3>
+              <div>
+                <img
+                  id="img1_car"
+                  src="https://d29fhpw069ctt2.cloudfront.net/icon/image/38677/preview2.png"
+                  alt="nintendo switch logo"
+                />
+                <img
+                  id="img2_car"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrBjUaVkaH2SrSujmVca4WHMhpkXZ7BgeKH31u7fN03eYY-KGIPN-TDk19wZ6QDHR8jmo&usqp=CAU"
+                  alt="xbox logo"
+                />
+              </div>
             </div>
-          </div>
           </picture>
         </div>
         <button id="button_carosello">VIEW MORE GAMES</button>
