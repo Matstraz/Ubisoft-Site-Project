@@ -61,6 +61,8 @@ html {
 
 .mobile__icon {
   display: none;
+  width: 2rem;
+  stroke: white;
 }
 
 .nav__logo {
@@ -315,10 +317,8 @@ footer {
     overflow: hidden;
   }
 
-  .mobile__icon {
+  #dots {
     display: block;
-    width: 2rem;
-    stroke: white;
   }
 
   .nav__buttons {
@@ -338,6 +338,14 @@ footer {
     left: 0rem;
     width: 100%;
     overflow: scroll;
+  }
+
+  #expand-toggle:checked + #expand-btn #dots {
+    display: none;
+  }
+
+  #expand-toggle:checked + #expand-btn #cross {
+    display: block;
   }
 
   .nav__button {
