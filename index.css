@@ -132,6 +132,10 @@ color: white; */
   width: 24rem;
   font-size: 1.5rem;
 }
+.hero-button:hover {
+  transition: 0.3s ease 0.1s;
+  background-color: #5e8c9d;
+}
 .button-bottom-container {
   display: flex;
   justify-content: space-around;
@@ -178,16 +182,17 @@ color: white; */
   /* style icon console */
   width: 1.6rem;
 }
-#button_carosello {
+.button_carosello {
   /* style bottone carosello */
   background-color: rgb(204, 0, 118);
   color: white;
   font-size: 1.5rem;
-  padding: 2rem 5rem;
+  padding: 2rem 3rem;
+  width: 30rem;
   border-radius: 3rem;
   border: 0.3rem solid rgb(204, 0, 118);
 }
-#button_carosello:hover {
+.button_carosello:hover {
   /* hover style bottone carosello, manca effetto dissolvenza dal centro */
   background-color: white;
   color: rgb(204, 0, 118);
@@ -208,6 +213,65 @@ color: white; */
   height: 100%;
 }
 /* !!END CAROSELLO */
+/* !! LATEST NEWS (LATN) */
+.nav__latn {
+  font-size: 1.7rem;
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+}
+.nav__latn a {
+  color: rgb(204, 0, 118);
+  text-decoration: none;
+}
+.nav__latn a:hover {
+  color: black;
+  text-decoration: underline;
+  transition: 00.3s;
+}
+.grid_container_latn {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 2.5rem;
+}
+.grid_container_latn span {
+  font-size: 1rem;
+}
+.grid_container_latn a {
+  font-size: 2rem;
+  font-weight: 800;
+  text-decoration: none;
+  color: black;
+}
+.grid_item_big:hover a,
+.grid_item_small:hover a {
+  text-decoration: underline;
+}
+.grid_item_big {
+  width: 100%;
+  grid-row: 1/3;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 3rem 0;
+}
+.grid_item_big img {
+  width: 100%;
+}
+.grid_item_small {
+  width: 100%;
+  display: flex;
+  padding: 3rem 0;
+  gap: 2.5rem;
+}
+.grid_item_small img {
+  width: 50%;
+}
+.item_text {
+  display: flex;
+  flex-direction: column;
+}
 /* !! UBISOFT STORE */
 
 .container__store {
@@ -215,6 +279,14 @@ color: white; */
   height: 50rem;
   background-size: cover;
   background-position: center;
+}
+.container__store h4 {
+  font-size: 2rem;
+  padding: 1.5rem;
+}
+.container__store h4:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 #store-container-1 {
@@ -241,6 +313,21 @@ color: white; */
   height: 40rem;
   background-size: cover;
   background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.container__inside h4 {
+  background-color: rgba(0, 0, 0, 0.296);
+  font-size: 2.5rem;
+  padding: 3rem;
+  text-transform: uppercase;
+}
+.container__inside h4:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 #inside-container-1 {
@@ -254,6 +341,18 @@ color: white; */
 }
 
 /* !!END UBISOFT STORE */
+/* !! FEATURED VIDEOS (FVID) */
+.fvid_text {
+  color: black;
+  font-size: 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.fvid_text h5 {
+  justify-self: start;
+}
+
+/* !! END FEATURED VIDEOS (FVID) */
 /* !!UBISOFT CONNECT*/
 
 .section__body--connect {
