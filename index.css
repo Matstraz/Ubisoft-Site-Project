@@ -162,6 +162,7 @@ color: white; */
   display: flex;
   gap: 1rem;
 }
+
 .container__3-card h3 {
   /* stile titoli carosello */
   font-size: 1.8rem;
@@ -493,6 +494,10 @@ footer {
 /* MEDIA QUERIES */
 
 @media (max-width: 768px) {
+  .section__body h2 {
+    font-size: 3rem;
+  }
+
   .section__hero {
     overflow: hidden;
   }
@@ -538,5 +543,95 @@ footer {
 
   .nav__button:last-child {
     border-bottom: 1px solid lightgray;
+  }
+
+  .hero__title h1 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero__title p {
+    font-size: 2rem;
+  }
+
+  .button-bottom-container button {
+    display: none;
+  }
+
+  #rainbow-logo {
+    display: block;
+  }
+
+  .container__3-card h3 {
+    font-size: 1.4rem;
+    padding: 1rem 0 2rem 0;
+  }
+
+  .button_carosello {
+    width: 25rem;
+  }
+
+  .grid_container_latn a {
+    font-size: 1.2rem;
+  }
+
+  .grid_item_big {
+    padding: 2rem 0;
+  }
+
+  .grid_item_small {
+    padding: 2rem 0;
+    gap: 2.5rem;
+  }
+
+  .container__store {
+    height: 25rem;
+  }
+
+  .container__store h4 {
+    font-size: 1.8rem;
+  }
+
+  .container__inside {
+    height: 20rem;
+  }
+
+  .container__inside h4 {
+    background-color: rgba(0, 0, 0, 0.485);
+    font-size: 1.5rem;
+    padding: 2rem;
+    height: 11rem;
+    text-transform: uppercase;
+  }
+  .fvid_text h5 {
+    font-size: 1.5rem;
+  }
+
+  .section__body--connect {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .section__body--connect img {
+    width: 100%;
+  }
+
+  .container__connect {
+    gap: 4rem;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+
+  .nav__footer span {
+    color: black;
+  }
+
+  .container__icons {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .container__icons img {
+    width: 3.5rem;
   }
 }
