@@ -439,6 +439,9 @@ footer {
   width: 10%;
   fill: white;
 }
+.icon-ubisoft-logo-footer {
+  display: none;
+}
 
 .btn-glob {
   border: none;
@@ -451,7 +454,6 @@ footer {
 
 .icon-glob {
   margin-top: 2px;
-  background-color: black;
 }
 .logo_foot {
   display: flex;
@@ -492,7 +494,7 @@ footer {
 }
 
 /* MEDIA QUERIES */
-
+/* tablet */
 @media (max-width: 768px) {
   .section__body h2 {
     font-size: 3rem;
@@ -633,5 +635,183 @@ footer {
 
   .container__icons img {
     width: 3.5rem;
+  }
+  .icon-ubisoft-logo-footer {
+    display: none;
+  }
+}
+/** versione mobile */
+
+@media screen and (max-width: 500px) and (min-width: 0px) {
+  .nav__top {
+    flex-flow: row-reverse;
+  }
+  #expand-toggle:checked ~ .nav__buttons {
+    width: 40%;
+    left: unset;
+    right: 0rem;
+    overflow: hidden;
+
+    background-color: rgb(27, 27, 27);
+  }
+  .nav__button {
+    border-left: 2px solid #5e8c9d;
+    border-bottom: 2px solid #5e8c9d;
+    border-top: unset;
+    overflow: hidden;
+  }
+  .nav__button:last-child {
+    border-bottom: 2px solid #5e8c9d;
+  }
+
+  .section__hero {
+    width: 100%;
+    height: 50rem;
+    gap: 4rem;
+  }
+  .button-container {
+    flex-direction: column;
+  }
+  .hero__title h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    padding: 1rem;
+  }
+  .hero__title p {
+    font-size: 1.5rem;
+    padding: 2rem;
+  }
+  .button-bottom-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: flex-end;
+  }
+
+  .button-bottom-container button {
+    font-size: 1rem;
+    font-weight: 600;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  #rainbow-logo {
+    display: flex;
+    padding-bottom: 0.2rem;
+    width: 15rem;
+  }
+
+  .container__3-card {
+    flex-direction: column;
+    align-content: center;
+  }
+  .mobile_container_carousel {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    gap: 3rem;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .mobile_container_carousel picture {
+    width: 16rem;
+  }
+  .nav__latn {
+    font-size: 1.5rem;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .grid_container_latn {
+    display: flex;
+    flex-direction: column;
+  }
+  .section__body {
+    gap: 2rem;
+  }
+
+  .container__store {
+    height: 30rem;
+  }
+  .container__inside {
+    height: 25rem;
+  }
+  .fvid_text h5 {
+    text-align: center;
+  }
+  .section__body--connect {
+    justify-content: center;
+  }
+  .section__body--connect img {
+    width: 70%;
+  }
+
+  .container__connect h2 {
+    font-size: 3.5rem;
+  }
+  .container__connect h4 {
+    font-size: 1rem;
+  }
+  .nav__footer span,
+  .content {
+    display: none;
+  }
+  .nav__footer {
+    justify-content: center;
+  }
+  .mobile_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    gap: 1rem;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+  }
+  .logo_foot {
+    flex-direction: column-reverse;
+    padding: 0 0;
+    align-items: center;
+  }
+  .btn-glob {
+    order: 1;
+  }
+  .grid_foot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #mob1 {
+    order: 2;
+  }
+  #mob2 {
+    order: 3;
+  }
+  #mob3 {
+    order: 4;
+  }
+  #mob4 {
+    order: 7;
+  }
+  .icon-ubisoft-logo-desktop {
+    display: none;
+  }
+  .icon-ubisoft-logo-footer {
+    display: inline;
+    width: 50%;
+    fill: white;
+  }
+  #mob5 {
+    order: 5;
+    padding: 3rem 0;
+  }
+  .foot_privacy {
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+    order: 8;
   }
 }
