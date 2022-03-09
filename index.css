@@ -59,6 +59,10 @@ html {
   display: none;
 }
 
+#expand-btn {
+  display: none;
+}
+
 .mobile__icon {
   display: none;
   width: 2rem;
@@ -317,6 +321,10 @@ footer {
     overflow: hidden;
   }
 
+  #expand-btn {
+    display: block;
+  }
+
   #dots {
     display: block;
   }
@@ -337,7 +345,6 @@ footer {
     top: 5rem;
     left: 0rem;
     width: 100%;
-    overflow: scroll;
   }
 
   #expand-toggle:checked + #expand-btn #dots {
