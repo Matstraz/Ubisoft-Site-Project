@@ -22,79 +22,42 @@ a:visited{
 /* main + second navigation bar */
 
 .mainbar{
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    text-align: center;
+    line-height: 7vh;
+    font-size: 1rem;
+    font-weight: 900;
     height: 7vh;
 }
 
-.mainbar li{
-    display: inline;
-    font-size: medium;
-    font-weight: bold;
-    line-height: 7vh;
-}
-
-.barright1, .barright2, .barleft, .centralbar{
-    height: 100%;
-    position: relative;
-}
-
-.barright1 img, .barright2 img, .barleft img{
-    height: 65%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%)
-}
-
-.bar2{
-    background-color: white;
-    color: rgb(204, 37, 120);
-    width: 89.5%;
-    margin: auto;
-    border-bottom: 1px solid black;
-}
-
-.bar2 li{
-    margin-right: 50px;
-    padding-left: 25px;
-}
-
-.bar1{
-    background-color: black;
-    color: white;
-}
-
 .centralbar{
-    text-align: center;
-    float: left;
-    width: 80%;
+    flex-grow: 20;
+}
+
+div.mainbar img:first-child{
+    flex-grow: 3;
+}
+
+div.mainbar img:nth-child(3), div.mainbar img:nth-child(4){
+    flex-grow: 1
+}
+
+.centralbar ul{
+    display: flex;
+    justify-content: center;
 }
 
 .centralbar li{
-    display: inline-block;
-    width: 9.5%; 
-    margin: auto;
+    flex-basis: 11%;
+    list-style-type: none;
 }
 
-.barleft{
-    float: left;
-    width: 10%;
-}
-
-.barright1{
-    float: left;
-    width: 5%;
-}
-
-.barright2{
-    float: left;
-    width: 5%;
-}
-
-header{
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background-color: white;
+.mainbar img{
+    height: 4vh;
+    align-self: center;
 }
 
 /* MAIN */
