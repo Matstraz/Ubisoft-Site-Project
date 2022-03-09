@@ -174,11 +174,11 @@ color: white; */
   flex-direction: column;
   justify-content: space-between;
 }
-#img1_car {
+.img1_car {
   /* style icon console */
   width: 1.5rem;
 }
-#img2_car {
+.img2_car {
   /* style icon console */
   width: 1.6rem;
 }
@@ -432,6 +432,24 @@ footer {
 
 .content {
   width: 13rem;
+}
+
+.icon-ubisoft-logo-desktop {
+  width: 10%;
+  fill: white;
+}
+
+.btn-glob {
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+}
+
+.icon-glob {
+  margin-top: 2px;
+  background-color: black;
 }
 
 /* MEDIA QUERIES */
