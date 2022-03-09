@@ -1,63 +1,92 @@
 /* GENERAL */
-@font-face { font-family: Ubisoft Sans; src: url(/Ubisoft-font/fonts/ubisoftsans-regular.otf); }
-@font-face { font-family: Ubisoft Sans; font-weight: bold; src: url(/Ubisoft-font/fonts/ubisoftsans-bold.otf);}
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Ubisoft Sans", sans-serif;
+@font-face {
+  font-family: Ubisoft Sans;
+  src: url(/Ubisoft-font/fonts/ubisoftsans-regular.otf);
+}
+@font-face {
+  font-family: Ubisoft Sans;
+  font-weight: bold;
+  src: url(/Ubisoft-font/fonts/ubisoftsans-bold.otf);
 }
 
-a{
-    text-decoration: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubisoft Sans", sans-serif;
 }
 
-a:visited{
-    color: unset;
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: unset;
 }
 
 /* HEADER */
 
-/* main + second navigation bar */
+/* first nav bar */
 
-.mainbar{
-    display: flex;
-    background-color: black;
-    color: white;
-    justify-content: space-between;
-    text-align: center;
-    line-height: 7vh;
-    font-size: 1rem;
-    font-weight: 900;
-    height: 7vh;
+.mainbar {
+  display: flex;
+  background-color: black;
+  color: white;
+  justify-content: space-between;
+  text-align: center;
+  line-height: 7vh;
+  font-size: 1rem;
+  font-weight: 900;
+  height: 7vh;
 }
 
-.centralbar{
-    flex-grow: 20;
+.centralbar {
+  flex-grow: 20;
 }
 
-div.mainbar img:first-child{
-    flex-grow: 3;
+div.mainbar img:first-child {
+  flex-grow: 3;
 }
 
-div.mainbar img:nth-child(3), div.mainbar img:nth-child(4){
-    flex-grow: 1
+div.mainbar img:nth-child(3),
+div.mainbar img:nth-child(4) {
+  flex-grow: 1;
 }
 
-.centralbar ul{
-    display: flex;
-    justify-content: center;
+.centralbar ul {
+  display: flex;
+  justify-content: center;
 }
 
-.centralbar li{
-    flex-basis: 11%;
-    list-style-type: none;
+.centralbar li,
+.bar2 li {
+  flex-basis: 11%;
+  list-style-type: none;
 }
 
-.mainbar img{
-    height: 4vh;
-    align-self: center;
+.mainbar img {
+  height: 4vh;
+  align-self: center;
+}
+
+/* second navigation bar */
+
+.bar2 {
+  background-color: white;
+  color: rgb(219, 38, 189);
+  text-align: center;
+  line-height: 7vh;
+  font-size: 1rem;
+  font-weight: 900;
+  height: 7vh;
+  width: 80%;
+  margin: auto;
+  border-bottom: 1px solid black;
+}
+
+.bar2 ul,
+.bar3 ul {
+  display: flex;
 }
 
 /* MAIN */
@@ -66,131 +95,145 @@ div.mainbar img:nth-child(3), div.mainbar img:nth-child(4){
 
 /* main picture */
 
-.hero{
-    color: white;
-    background-image: url("images/Eivor_female.webp");
-    height: 60vh;
-    background-size: cover;
-    background-position: center;
-    position: relative;
+.hero {
+  color: white;
+  background-image: url("images/Eivor_female.webp");
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
 
-.hero h1{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 52px;
-}   
+.hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 52px;
+}
 
-.opacity{
-
-    height: 60vh;
-    background-color: rgba(0, 0, 0, 0.3);
+.opacity {
+  height: 60vh;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 /* third navigation bar */
 
-.bar3{
-   color: rgb(87, 115, 240);
-   text-align: center;
-   margin-top: 20px;
+.bar3 {
+  color: rgb(87, 115, 240);
+  text-align: center;
+  background-color: white;
+  line-height: 2vh;
+  font-size: 1rem;
+  font-weight: 900;
+  height: 2vh;
+  margin-top: 30px;
+
 }
 
-.bar3 li{
-   border-right: 3px solid black;
-   padding-right: 5px;
-   font-size: large;
+.bar3 ul {
+  justify-content: center;
+  
+}
+
+.bar3 li {
+  border-right: 3px solid black;
+  padding-right: 5px;
+  font-size: large;
+  list-style-type: none;
+  padding-left: 5px;
+  
 }
 
 /* Section 2 */
 
-.big_container{
-    margin: 80px 80px 50px 80px;
+.big_container {
+  margin: 80px 80px 50px 80px;
 }
 
 /* leftbox + rightbox */
 
-.leftbox, .rightbox{
-    height: 65vh;
-    width: 49%;
+.leftbox,
+.rightbox {
+  height: 65vh;
+  width: 49%;
 }
 
-.graycontent{
-    height: 55vh;
-    width: 100%;
-    background-color: rgba(247, 247, 247, 0.986);
-    padding-top: 40px;
+.graycontent {
+  height: 55vh;
+  width: 100%;
+  background-color: rgba(247, 247, 247, 0.986);
+  padding-top: 40px;
 }
 
-.leftbox{
-   float: left;
+.leftbox {
+  float: left;
 }
 
-.rightbox{
-    float: right;
+.rightbox {
+  float: right;
 }
 
-.big_container::after{
-    clear: both;
-    content: '';
-    display: table;
+.big_container::after {
+  clear: both;
+  content: "";
+  display: table;
 }
 
-.sec2 h2{
-    text-align: center;
-    font-size: 35px;
-    font-weight: 700;
-    padding-bottom: 27px;
+.sec2 h2 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  padding-bottom: 27px;
 }
 
-.graycontent h3{
-    font-size: 24px;
-    font-weight: 700;
-    padding-left: 35px;
-    margin-bottom: 30px;
-    margin-top: 15px;
+.graycontent h3 {
+  font-size: 24px;
+  font-weight: 700;
+  padding-left: 35px;
+  margin-bottom: 30px;
+  margin-top: 15px;
 }
 
-.graycontent h4{
-    color: rgb(87, 115, 240);
-    display: inline-block;
+.graycontent h4 {
+  color: rgb(87, 115, 240);
+  display: inline-block;
 }
 
-.sx{
-    float: left;
+.sx {
+  float: left;
 }
 
-.fianco{
-    float: left;
-    padding-left: 15px;
-    font-size: 18px;
-    font-weight: bold;
+.fianco {
+  float: left;
+  padding-left: 15px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .sotto {
-    display: block;
-    font-size: 14px;
-    padding-top: 5px;
-    font-weight: 100;
+  display: block;
+  font-size: 14px;
+  padding-top: 5px;
+  font-weight: 100;
 }
 
-.pdfsolution::after{
-    clear: both;
-    content: '';
-    display: table;
+.pdfsolution::after {
+  clear: both;
+  content: "";
+  display: table;
 }
 
-.pdfsolution{
-    margin-left: 35px;
-    margin-top: 0px;
-    margin-right: 60px;
-    margin-bottom: 0px;
-    padding: 25px;
+.pdfsolution {
+  margin-left: 35px;
+  margin-top: 0px;
+  margin-right: 60px;
+  margin-bottom: 0px;
+  padding: 25px;
 }
 
-.pdfsolution:hover{
-    background-color: rgba(104, 101, 101, 0.1);
+.pdfsolution:hover {
+  background-color: rgba(104, 101, 101, 0.1);
 }
 
 /* button 1 */
