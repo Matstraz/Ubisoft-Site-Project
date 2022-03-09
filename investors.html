@@ -30,7 +30,7 @@
           </div>
           <img src="icons/Search-icon.svg" alt="Search icon" />
           <img src="icons/user-icon-2.svg" alt="login" />
-          <div style="flex-grow: 1"><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--></div>
+          <div><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--></div>
         </div>
         <!-- second navigation bar -->
         <div class="bar2">
@@ -49,7 +49,7 @@
       <!-- section 1 -->
       <section class="sec1">
         <!-- main picture -->
-        <div class="hero">
+        <div class="mainimage">
           <h1>INVESTOR CENTER</h1>
           <div class="opacity"></div>
         </div>
@@ -68,156 +68,140 @@
       </section>
       <!-- section 2 -->
       <section class="sec2">
-        <div class="big_container">
-          <!-- leftbox -->
-          <div class="leftbox">
-            <div>
-              <h2>LATEST NEWS</h2>
+        <main>
+          <div class="newscontainer">
+            <div class="smallcontainer1">
+              <p>LATEST NEWS</p>
+              <h2>Third Quarter Sales FY22</h2>
+              <div class="inner1">
+                <img src="icons/logopdf.svg" alt="" />
+                <div class="wordright">
+                  <p>Ubisoft reports third-quarter 2021-22 Sales</p>
+                  <p>Feb 17, 2022 - 226.1 KB</p>
+                </div>
+              </div>
+              <div class="inner1">
+                <img src="icons/audio-icon.svg" alt="" />
+                <div class="wordright">
+                  <p>Conference call - February 17, 2020 - 6.15pm CET</p>
+                  <p>Feb 17, 2022</p>
+                </div>
+              </div>
             </div>
-            <div class="graycontent">
-              <h3>Third Quarter Sales FY22</h3>
-              <a href="#">
-                <div class="pdfsolution">
-                  <div class="sx">
-                    <img
-                      src="icons/logopdf.svg"
-                      height="40"
-                      width="40"
-                      alt="a pdf icon"
-                    />
-                  </div>
-                  <div class="fianco">
-                    <h4>Ubisoft reports third-quarter 2021-22 Sales</h4>
-                    <span class="sotto">Feb 17, 2022 - 226.1 KB</span>
+            <div class="smallcontainer1">
+              <p>FY CALENDAR</p>
+              <div class="inner2">
+                <div class="minibox">
+                  <div>Feb 17, 2022</div>
+                  <div>
+                    &bull; Q3 Sales
+                    <p>(quiet period starting on 01-26-2022 end of the day)</p>
                   </div>
                 </div>
-              </a>
-              <a href="#">
-                <div class="pdfsolution">
-                  <div class="sx">
-                    <img
-                      src="icons/audio-icon.svg"
-                      height="40"
-                      width="40"
-                      alt="a pdf icon"
-                    />
-                  </div>
-                  <div class="fianco">
-                    <h4>Conference call - February 17, 2020 - 6.15pm CET</h4>
-                    <span class="sotto">Feb 17, 2022</span>
+                <div class="minibox">
+                  <div>Oct 28, 2021</div>
+                  <div>
+                    &bull; H1 Sales & Earnings
+                    <p>(quiet period starting on 09-28-2021 end of the day)</p>
                   </div>
                 </div>
-              </a>
+                <div class="minibox">
+                  <div>Oct 28, 2021</div>
+                  <div>
+                    &bull; Q1 Sales
+                    <p>(quiet period starting on 05-07-2021 end of the day)</p>
+                  </div>
+                </div>
+                <div class="minibox">
+                  <div>Feb 17, 2022</div>
+                  <div>
+                    &bull; Annual General Meeting
+                    <p>&nbsp;</p>
+                  </div>
+                </div>
+                <div class="minibox">
+                  <div>Feb 17, 2022</div>
+                  <div>
+                    &bull; Q3 Sales
+                    <p>(quiet period starting on 01-26-2022 end of the day)</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <!-- rightbox -->
-          <div class="rightbox">
-            <div><h2>FY CALENDAR</h2></div>
-            <div class="graycontent">
-              <p>
-                <span>Feb 17, 2022</span>
-                <span>&bull;<strong> Q3 Sales</strong></span
-                ><span>
-                  (quiet period starting on 01-26-2022 end of the day)</span
-                >
-              </p>
-              <p>
-                <span>Oct 28, 2021</span>
-                <span>&bull;<strong> H1 Sales & Earnings</strong></span
-                ><span>
-                  (quiet period starting on 09-28-2021 end of the day)</span
-                >
-              </p>
-              <p>
-                <span>Jul 20, 2021</span>
-                <span>&bull;<strong> Q1 Sales</strong></span
-                ><span>
-                  (quiet period starting on 05-07-2021 end of the day)</span
-                >
-              </p>
-              <p>
-                <span>Jul 1, 2021</span>
-                <span>&bull;<strong> Annual General Meeting </strong></span>
-              </p>
-              <p>
-                <span>May 11, 2021</span>
-                <span>&bull;<strong> Full Year Earnings </strong></span
-                ><span
-                  >(quiet period starting on 04-09-2021 end of the day)</span
-                >
-              </p>
-            </div>
-          </div>
-        </div>
+        </main>
         <!-- button 1 -->
-        <div><a href="#">CONTACT INVESTORS</a></div>
+        <button class="button1"><a href="#">CONTACT INVESTORS</a></button>
       </section>
       <!-- section 3 -->
-      <section>
+      <section class="expmenu">
         <h2>PRESS RELEASES</h2>
-        <div>
-          <p>Press Releases</p>
+        <div class="expandable">
+          <p>Press Releases<span>&#9660;</span></p>
         </div>
       </section>
       <!-- section 4 -->
-      <section>
+      <section class="expmenu">
         <h2>EARNINGS & SALES</h2>
-        <div>
-          <p>Earnings & Sales</p>
+        <div class="expandable">
+          <p>Earnings & Sales<span>&#9660;</span></p>
         </div>
       </section>
       <!-- section 5 -->
-      <section>
+      <section class="expmenu">
         <h2>KEY FIGURES & ANNUAL REPORTS</h2>
-        <div>
-          <p>Key Figures</p>
-          <p>Annual Reports</p>
+        <div class="expandable">
+          <p>Key Figures <span>&#9660;</span></p>
+          <p>Annual Reports <span>&#9660;</span></p>
         </div>
       </section>
       <!-- section 6 -->
-      <section>
+      <section class="expmenu">
         <h2>GOVERNANCE</h2>
-        <div>
-          <p>Board Of Directors</p>
-          <p>Committees</p>
-          <p>The Internal Rules of the Board Directors</p>
-          <p>Compensation Policy of Corporative Officers</p>
+        <div class="expandable">
+          <p>Board Of Directors <span>&#9660;</span></p>
+          <p>Committees <span>&#9660;</span></p>
+          <p>The Internal Rules of the Board Directors <span>&#9660;</span></p>
+          <p>Compensation Policy of Corporative Officers <span>&#9660;</span></p>
         </div>
       </section>
       <!-- section 7 -->
-      <section class="fff">
-        <div class="quals">
-          <p>Social & Environmental Impacts</p>
-          <h2>Enriching players' lives together in a sustainable world</h2>
-          <a href="#">LEARN MORE</a>
+      <section class="social">
+        <div class="socialsson">
+          <div class="socialtext">
+            <p>SOCIAL & ENVIRONMENTAL IMPACTS</p>
+            <h2>Enriching players' lives together in a sustainable world</h2>
+            <button class="button2">LEARN MORE</button>
+          </div>
         </div>
         <img
           src="https://staticctf.akamaized.net/8aefmxkxpxwl/2NUII6TTk9F8Z76pXoj7aP/6728a2f9d7d53915e6a702df0bf5af5d/Image_AC.png?w=1920"
           alt="A boat image"
-          height="460"
         />
       </section>
       <!-- section 8 -->
-      <section>
+      <section class="expmenu sec8">
         <h2>GENERAL MEETINGS</h2>
-        <div>
-          <p>General Meetings</p>
-          <p>General Information</p>
+        <div class="expandable">
+          <p>General Meetings<span>&#9660;</span></p>
+          <p>General Information<span>&#9660;</span></p>
         </div>
       </section>
       <!-- section 9 -->
-      <section>
+      <section class="expmenu">
         <h2>SHARE INFORMATION</h2>
-        <div>
-          <p>Share Price</p>
-          <p>Stock Information</p>
-          <p>Programmed Trading Mandate</p>
+        <div class="expandable">
+          <p>Share Price<span>&#9660;</span></p>
+          <p>Stock Information<span>&#9660;</span></p>
+          <p>Programmed Trading Mandate<span>&#9660;</span></p>
         </div>
       </section>
       <!-- section 10 -->
-      <section>
+      <section class="expmenu">
         <h2>REGULATED INFORMATION</h2>
-        <p>Regulated Information</p>
+        <div class="expandable">
+          <p>Regulated Information<span>&#9660;</span></p>
+        </div>
       </section>
     </main>
     <!-- FOOTER -->
@@ -316,7 +300,7 @@
               alt="worl icon"
               height="30"
             />
-            <span>ENGLISH</span>
+            <div>ENGLISH</div>
           </a>
         </div>
         <!-- copyright -->
