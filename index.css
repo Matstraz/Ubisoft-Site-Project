@@ -445,11 +445,49 @@ footer {
   align-items: center;
   gap: 1rem;
   color: white;
+  font-size: 2rem;
 }
 
 .icon-glob {
   margin-top: 2px;
   background-color: black;
+}
+.logo_foot {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 7rem;
+}
+.grid_foot {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+  padding: 0 7rem 3rem 7rem;
+}
+.grid_foot ul {
+  list-style: none;
+  color: white;
+  font-size: 1.5rem;
+}
+.scritta_grigia {
+  color: grey;
+}
+.grid_foot a:active,
+.grid_foot a:hover,
+.grid_foot a:link,
+.grid_foot a:visited {
+  color: white;
+  text-decoration: none;
+  line-height: 4rem;
+}
+.grid_foot a {
+  line-height: 4rem;
+}
+.foot_privacy {
+  color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  gap: 2rem;
 }
 
 /* MEDIA QUERIES */
