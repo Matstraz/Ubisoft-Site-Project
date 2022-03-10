@@ -18,6 +18,7 @@
 
 a {
   text-decoration: none;
+  color: unset;
 }
 
 a:visited {
@@ -311,8 +312,6 @@ div.wordright p:last-child {
   float: right;
 }
 
-/* section 7 */
-
 .social {
   display: flex;
   justify-content: center;
@@ -358,6 +357,9 @@ div.wordright p:last-child {
 }
 
 /*footer*/
+
+/* social bar */
+
 .socialbar {
   background-color: black;
   color: white;
@@ -370,10 +372,9 @@ div.wordright p:last-child {
   display: flex;
   flex-grow: 12;
   justify-content: center;
-  
 }
 
-.socialbar li{
+.socialbar li {
   margin: 8px 15px;
 }
 
@@ -383,60 +384,106 @@ div.wordright p:last-child {
   color: gray;
 }
 
+.socialbar img {
+  height: 4vh;
+}
+
 .phantom {
   flex: 1 350px;
 }
 
-/*  address  */
+/*  contacts  */
 
-address img{
-height: 5vh;
+.contacts img {
+  height: 5vh;
 }
 
-address{
+.footlinks6 img {
+  height: 13vh;
+}
+
+.contacts {
   background-color: rgb(29, 29, 29);
   color: white;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 16%);
   grid-template-rows: 1fr 1fr 1fr;
+  justify-content: center;
 }
 
-.logo2{
+.logo2 {
   grid-column: 1 / 2;
-  border: 2px wheat solid;
+  align-self: center;
 }
 
-.footlinks1{
+.footlinks1 {
   grid-area: 2 / 1 / 3 / 2;
-  border: 2px wheat solid;
 }
 
-.footlinks2{
+.footlinks1 p:nth-child(n + 3) {
+  font-weight: unset;
+  color: grey;
+}
+
+.footlinks2 {
   grid-area: 2 / 2 / 3 / 3;
-  border: 2px wheat solid;
 }
 
-.footlinks3{
+.footlinks3 {
   grid-area: 2 / 3 / 3 / 4;
-  border: 2px wheat solid;
 }
 
-.footlinks4{
+.footlinks4 {
   grid-area: 2 / 4 / 3 / 5;
-  border: 2px wheat solid;
 }
 
-.footlinks5{
+.footlinks5 {
   grid-area: 1 / 5 / 2 / 6;
-  border: 2px wheat solid;
+  justify-self: end;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
 }
 
-.footlinks6{
+.footlinks6 {
   grid-area: 2 / 5 / 3 / 6;
-  border: 2px wheat solid;
+  text-align: end;
 }
 
-.footlinks7{
+.footlinks7 {
   grid-area: 3 / 5 / 4 / 6;
-  border: 2px wheat solid;
+  font-size: x-small;
+  font-weight: unset;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: end;
+}
+
+footer li {
+  list-style-type: none;
+}
+
+.contacts p {
+  margin-bottom: 6px;
+  font-weight: 900;
+}
+/* final button */
+.upsite {
+  border-radius: 100px;
+  background-color: rgb(87, 2, 245);
+  color: white;
+  padding: 20px;
+  padding-top: 18px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border: 1px solid transparent;
+}
+
+.upsite:hover {
+  cursor: pointer;
+  background-color: rgba(87, 2, 245, 0.5);
 }
