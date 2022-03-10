@@ -618,6 +618,18 @@ small {
 
 .first_footer h3 {
   color: white;
+  margin-left: 60px;
+  margin-top: 20px;
+}
+
+.button_social {
+  margin-left: 180px;
+}
+
+.first_footer button {
+  background-color: rgba(36, 71, 66, 1) ;
+  border: none;
+  margin-top: -25px;
 }
 
 .section {
@@ -632,14 +644,22 @@ small {
 }
 
 .second_footer {
-  border: 1px solid red;
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
 }
 
 .section a {
   display: flex;
   flex-direction: column;
+}
+
+.footer_icon {
+  background: linear-gradient(
+    86deg,
+    rgba(36, 71, 66, 1) 0%,
+    rgba(10, 22, 38, 1) 45%,
+    rgba(38, 10, 36, 1) 100%
+  ); 
 }
 
 /* DEFAULT CLASSES */
