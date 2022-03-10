@@ -54,6 +54,21 @@ html {
   align-items: center;
   padding: 0 5rem;
 }
+
+#expand-toggle {
+  display: none;
+}
+
+#expand-btn {
+  display: none;
+}
+
+.mobile__icon {
+  display: none;
+  width: 2rem;
+  stroke: white;
+}
+
 .nav__logo {
   height: 4rem;
 }
@@ -117,6 +132,10 @@ color: white; */
   width: 24rem;
   font-size: 1.5rem;
 }
+.hero-button:hover {
+  transition: 0.3s ease 0.1s;
+  background-color: #5e8c9d;
+}
 .button-bottom-container {
   display: flex;
   justify-content: space-around;
@@ -144,7 +163,116 @@ color: white; */
   gap: 1rem;
 }
 
+.container__3-card h3 {
+  /* stile titoli carosello */
+  font-size: 1.8rem;
+  font-weight: 800;
+  padding: 1rem 0;
+}
+.container__3-card picture {
+  /* flex per allineare tutte le icon in basso */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.img1_car {
+  /* style icon console */
+  width: 1.5rem;
+}
+.img2_car {
+  /* style icon console */
+  width: 1.6rem;
+}
+.button_carosello {
+  /* style bottone carosello */
+  background-color: rgb(204, 0, 118);
+  color: white;
+  font-size: 1.5rem;
+  padding: 2rem 3rem;
+  width: 30rem;
+  border-radius: 3rem;
+  border: 0.3rem solid rgb(204, 0, 118);
+}
+.button_carosello:hover {
+  /* hover style bottone carosello, manca effetto dissolvenza dal centro */
+  background-color: white;
+  color: rgb(204, 0, 118);
+  border: 0.3rem solid rgb(204, 0, 118);
+  transition: 0.3s ease 0.1s;
+  /* top: 50%;
+  left: 50%; */
+  /*  transform: translateX(-50%);
+  transform: translateY(-50%); */
+  /*   position: absolute;
+ */
+}
+.container_carosello_bottom {
+  /* accorpiamo titolo e icone console, in modo da avere tutti gli elementi del carosello in linea */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
 /* !!END CAROSELLO */
+/* !! LATEST NEWS (LATN) */
+.nav__latn {
+  font-size: 1.7rem;
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+}
+.nav__latn a {
+  color: rgb(204, 0, 118);
+  text-decoration: none;
+}
+.nav__latn a:hover {
+  color: black;
+  text-decoration: underline;
+  transition: 00.3s;
+}
+.grid_container_latn {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 2.5rem;
+}
+.grid_container_latn span {
+  font-size: 1rem;
+}
+.grid_container_latn a {
+  font-size: 2rem;
+  font-weight: 800;
+  text-decoration: none;
+  color: black;
+}
+.grid_item_big:hover a,
+.grid_item_small:hover a {
+  text-decoration: underline;
+}
+.grid_item_big {
+  width: 100%;
+  grid-row: 1/3;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 3rem 0;
+}
+.grid_item_big img {
+  width: 100%;
+}
+.grid_item_small {
+  width: 100%;
+  display: flex;
+  padding: 3rem 0;
+  gap: 2.5rem;
+}
+.grid_item_small img {
+  width: 50%;
+}
+.item_text {
+  display: flex;
+  flex-direction: column;
+}
 /* !! UBISOFT STORE */
 
 .container__store {
@@ -152,6 +280,14 @@ color: white; */
   height: 50rem;
   background-size: cover;
   background-position: center;
+}
+.container__store h4 {
+  font-size: 2rem;
+  padding: 1.5rem;
+}
+.container__store h4:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 #store-container-1 {
@@ -178,6 +314,21 @@ color: white; */
   height: 40rem;
   background-size: cover;
   background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.container__inside h4 {
+  background-color: rgba(0, 0, 0, 0.296);
+  font-size: 2.5rem;
+  padding: 3rem;
+  text-transform: uppercase;
+}
+.container__inside h4:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 #inside-container-1 {
@@ -191,6 +342,24 @@ color: white; */
 }
 
 /* !!END UBISOFT STORE */
+/* !! FEATURED VIDEOS (FVID) */
+.fvid_text {
+  color: black;
+  font-size: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: min-content;
+}
+.fvid_text h5 {
+  padding: 1.5rem 0;
+}
+.fvid_text h5:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* !! END FEATURED VIDEOS (FVID) */
 /* !!UBISOFT CONNECT*/
 
 .section__body--connect {
@@ -215,9 +384,24 @@ color: white; */
 }
 
 .container__connect h4 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
-
+.container__connect button {
+  background-color: #006ef5;
+  color: white;
+  border-radius: 30px;
+  border: 0.3rem solid #006ef5;
+  padding: 1rem 2rem;
+  letter-spacing: 1px;
+  width: 24rem;
+  font-size: 1.5rem;
+}
+.container__connect button:hover {
+  background-color: white;
+  color: #006ef5;
+  border: 0.3rem solid #006ef5;
+  transition: 0.3s ease 0.1s;
+}
 /* !!END UBISOFT CONNEC */
 /* !!FOOTER*/
 
@@ -249,4 +433,385 @@ footer {
 
 .content {
   width: 13rem;
+}
+
+.icon-ubisoft-logo-desktop {
+  width: 10%;
+  fill: white;
+}
+.icon-ubisoft-logo-footer {
+  display: none;
+}
+
+.btn-glob {
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+  font-size: 2rem;
+}
+
+.icon-glob {
+  margin-top: 2px;
+}
+.logo_foot {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 7rem;
+}
+.grid_foot {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+  padding: 0 7rem 3rem 7rem;
+}
+.grid_foot ul {
+  list-style: none;
+  color: white;
+  font-size: 1.5rem;
+}
+.scritta_grigia {
+  color: grey;
+}
+.grid_foot a:active,
+.grid_foot a:hover,
+.grid_foot a:link,
+.grid_foot a:visited {
+  color: white;
+  text-decoration: none;
+  line-height: 4rem;
+}
+.grid_foot a {
+  line-height: 4rem;
+}
+.foot_privacy {
+  color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  gap: 2rem;
+}
+
+/* MEDIA QUERIES */
+/* tablet */
+@media (max-width: 768px) {
+  .section__body h2 {
+    font-size: 3rem;
+  }
+
+  .section__hero {
+    overflow: hidden;
+  }
+
+  #expand-btn {
+    display: block;
+  }
+
+  #dots {
+    display: block;
+  }
+
+  .nav__buttons {
+    display: none;
+  }
+
+  .nav__img--lens {
+    display: none;
+  }
+
+  #expand-toggle:checked ~ .nav__buttons {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    top: 5rem;
+    left: 0rem;
+    width: 100%;
+  }
+
+  #expand-toggle:checked + #expand-btn #dots {
+    display: none;
+  }
+
+  #expand-toggle:checked + #expand-btn #cross {
+    display: block;
+  }
+
+  .nav__button {
+    border-top: 1px solid lightgray;
+    padding: 2.6rem 0;
+  }
+
+  .nav__button:last-child {
+    border-bottom: 1px solid lightgray;
+  }
+
+  .hero__title h1 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero__title p {
+    font-size: 2rem;
+  }
+
+  .button-bottom-container button {
+    display: none;
+  }
+
+  #rainbow-logo {
+    display: block;
+  }
+
+  .container__3-card h3 {
+    font-size: 1.4rem;
+    padding: 1rem 0 2rem 0;
+  }
+
+  .button_carosello {
+    width: 25rem;
+  }
+
+  .grid_container_latn a {
+    font-size: 1.2rem;
+  }
+
+  .grid_item_big {
+    padding: 2rem 0;
+  }
+
+  .grid_item_small {
+    padding: 2rem 0;
+    gap: 2.5rem;
+  }
+
+  .container__store {
+    height: 25rem;
+  }
+
+  .container__store h4 {
+    font-size: 1.8rem;
+  }
+
+  .container__inside {
+    height: 20rem;
+  }
+
+  .container__inside h4 {
+    background-color: rgba(0, 0, 0, 0.485);
+    font-size: 1.5rem;
+    padding: 2rem;
+    height: 11rem;
+    text-transform: uppercase;
+  }
+  .fvid_text h5 {
+    font-size: 1.5rem;
+  }
+
+  .section__body--connect {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .section__body--connect img {
+    width: 100%;
+  }
+
+  .container__connect {
+    gap: 4rem;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+
+  .nav__footer span {
+    color: black;
+  }
+
+  .container__icons {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .container__icons img {
+    width: 3.5rem;
+  }
+  .icon-ubisoft-logo-footer {
+    display: none;
+  }
+}
+/** versione mobile */
+
+@media screen and (max-width: 500px) and (min-width: 0px) {
+  .nav__top {
+    flex-flow: row-reverse;
+  }
+  #expand-toggle:checked ~ .nav__buttons {
+    width: 40%;
+    left: unset;
+    right: 0rem;
+    overflow: hidden;
+
+    background-color: rgb(27, 27, 27);
+  }
+  .nav__button {
+    border-left: 2px solid #5e8c9d;
+    border-bottom: 2px solid #5e8c9d;
+    border-top: unset;
+    overflow: hidden;
+  }
+  .nav__button:last-child {
+    border-bottom: 2px solid #5e8c9d;
+  }
+
+  .section__hero {
+    width: 100%;
+    height: 50rem;
+    gap: 4rem;
+  }
+  .button-container {
+    flex-direction: column;
+  }
+  .hero__title h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    padding: 1rem;
+  }
+  .hero__title p {
+    font-size: 1.5rem;
+    padding: 2rem;
+  }
+  .button-bottom-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: flex-end;
+  }
+
+  .button-bottom-container button {
+    font-size: 1rem;
+    font-weight: 600;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  #rainbow-logo {
+    display: flex;
+    padding-bottom: 0.2rem;
+    width: 15rem;
+  }
+
+  .container__3-card {
+    flex-direction: column;
+    align-content: center;
+  }
+  .mobile_container_carousel {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    gap: 3rem;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .mobile_container_carousel picture {
+    width: 16rem;
+  }
+  .nav__latn {
+    font-size: 1.5rem;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .grid_container_latn {
+    display: flex;
+    flex-direction: column;
+  }
+  .section__body {
+    gap: 2rem;
+  }
+
+  .container__store {
+    height: 30rem;
+  }
+  .container__inside {
+    height: 25rem;
+  }
+  .fvid_text h5 {
+    text-align: center;
+  }
+  .section__body--connect {
+    justify-content: center;
+  }
+  .section__body--connect img {
+    width: 70%;
+  }
+
+  .container__connect h2 {
+    font-size: 3.5rem;
+  }
+  .container__connect h4 {
+    font-size: 1rem;
+  }
+  .nav__footer span,
+  .content {
+    display: none;
+  }
+  .nav__footer {
+    justify-content: center;
+  }
+  .mobile_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    gap: 1rem;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+  }
+  .logo_foot {
+    flex-direction: column-reverse;
+    padding: 0 0;
+    align-items: center;
+  }
+  .btn-glob {
+    order: 1;
+  }
+  .grid_foot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #mob1 {
+    order: 2;
+  }
+  #mob2 {
+    order: 3;
+  }
+  #mob3 {
+    order: 4;
+  }
+  #mob4 {
+    order: 7;
+  }
+  .icon-ubisoft-logo-desktop {
+    display: none;
+  }
+  .icon-ubisoft-logo-footer {
+    display: inline;
+    width: 50%;
+    fill: white;
+  }
+  #mob5 {
+    order: 5;
+    padding: 3rem 0;
+  }
+  .foot_privacy {
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+    order: 8;
+  }
 }
