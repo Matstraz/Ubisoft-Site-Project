@@ -80,7 +80,7 @@ div.mainbar div:last-child {
   background-color: white;
   color: rgb(219, 38, 150);
   text-align: center;
-  height: 50px;
+  height: 50px; 
   font-size: 1rem;
   font-weight: 900;
   width: 90%;
@@ -131,7 +131,7 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 52px;
+  font-size: 3.25rem;
 }
 
 .opacity {
@@ -149,7 +149,7 @@ main {
   font-size: 1rem;
   font-weight: 900;
   height: 2vh;
-  margin-top: 35px;
+  margin-top: 3rem;
 }
 
 .bar3 ul {
@@ -158,11 +158,11 @@ main {
 }
 
 .bar3 li {
-  border-right: 3px solid black;
-  padding-right: 5px;
-  font-size: 17px;
+  border-right: 0.18rem solid black;
+  padding-right: 0.3rem;
+  font-size: 1rem;
   list-style-type: none;
-  padding: 0px 15px;
+  padding: 0rem 1rem;
 }
 
 /* Section 2 */
@@ -175,29 +175,29 @@ main {
 
 .smallcontainer1 {
   display: flex;
-  height: 450px;
+  height: 28.12rem;
   width: 44%;
   background-color: #f6f7fb;
   flex-direction: column;
-  margin: 50px 15px;
+  margin: 3.12rem 1rem;
   position: relative;
 }
 
 .smallcontainer1 > p:first-child {
-  font-size: 35px;
+  font-size: 1.9rem;
   font-weight: 900;
 }
 
 .smallcontainer1 h2 {
-  margin-top: 50px;
-  margin-left: 30px;
+  margin-top: 3.12rem;
+  margin-left: 1.9rem;
 }
 
 .inner1 {
   display: flex;
-  margin: 30px 30px 0px 30px;
+  margin: 1.8rem 1.8rem 0rem 1.8rem;
   align-items: flex-end;
-  padding: 20px;
+  padding: 1.2rem;
 }
 
 .inner1 img {
@@ -205,20 +205,20 @@ main {
 }
 
 .wordright {
-  margin-left: 15px;
+  margin-left: 1rem;
 }
 
 div.wordright p:first-child {
   color: rgb(89, 87, 240);
   font-size: large;
   font-weight: 800;
-  margin-top: 5px;
+  margin-top: 0.3rem;
 }
 
 div.wordright p:last-child {
   color: gray;
   font-size: small;
-  margin-top: 5px;
+  margin-top: 0.3rem;
 }
 
 .inner1:hover {
@@ -226,37 +226,37 @@ div.wordright p:last-child {
 }
 
 .inner2 {
-  margin-top: 20px;
-  margin-left: 60px;
+  margin-top: 1.2rem;
+  margin-left: 3.75rem;
 }
 
 .minibox {
   display: flex;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .minibox div:last-child {
-  font-size: 18px;
+  font-size: 1.1rem;
   font-weight: bold;
-  padding-left: 20px;
-  margin-left: 10px;
+  padding-left: 1.2rem;
+  margin-left: 0.7rem;
 }
 
 .minibox p {
   border-left: 1px solid black;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: initial;
-  padding-left: 10px;
+  padding-left: 0.7rem;
   color: gray;
   display: block;
-  height: 40px;
+  height: 2.5rem;
 }
 
 /*Centramento titoli small containers*/
 
 .smallcontainer1 > p:first-child {
   position: absolute;
-  top: -70px;
+  top: -4.37rem;
   left: 50%;
   transform: translate(-50%);
 }
@@ -266,15 +266,15 @@ div.wordright p:last-child {
 .button1 {
   background-color: rgb(89, 87, 240);
   color: white;
-  border-radius: 40px;
+  border-radius: 2.5rem;
   font-size: large;
-  padding: 28px;
+  padding: 1.8rem;
   font-weight: 900;
   text-align: center;
   border: 1px solid rgb(29, 174, 241);
   width: 22rem;
   margin: auto;
-  margin-bottom: 30px;
+  margin-bottom: 1.9rem;
   display: block;
 }
 
@@ -287,14 +287,14 @@ div.wordright p:last-child {
 
 .expmenu h2 {
   text-align: center;
-  font-size: 38px;
+  font-size: 2.3rem;
 }
 
 .expandable p {
   background-color: #f6f7fb;
   font-size: x-large;
-  margin: 50px 60px;
-  padding: 30px;
+  margin: 3.12rem 3.75rem;
+  padding: 1.8rem;
 }
 
 .expandable p:active {
@@ -302,15 +302,15 @@ div.wordright p:last-child {
 }
 
 .expmenu {
-  margin: 135px 0px;
+  margin: 8.43rem 0px;
 }
 
 .expmenu.sec8 {
-  margin-top: 250px;
+  margin-top: 15.6rem;
 }
 
 .expmenu p span {
-  font-size: 16px;
+  font-size: 1rem;
   float: right;
 }
 
@@ -321,11 +321,11 @@ div.wordright p:last-child {
 }
 .socialtext {
   padding: 10%;
-  margin-top: 10px;
+  margin-top: 0.7rem;
 }
 
 .socialtext * {
-  margin-bottom: 30px;
+  margin-bottom: 1.9rem;
 }
 
 .socialsson,
@@ -334,16 +334,16 @@ div.wordright p:last-child {
   color: white;
   font-weight: 900;
   flex-grow: 1;
-  height: 500px;
+  height: 31.25rem;
   width: 50%;
 }
 
 .button2 {
   background-color: #d80388;
   color: white;
-  border-radius: 40px;
+  border-radius: 2.5rem;
   font-size: large;
-  padding: 20px 40px;
+  padding: 1.2rem 2.5rem;
   font-weight: 900;
   text-align: left;
   border: 1px solid rgb(10, 12, 14);
@@ -377,11 +377,11 @@ div.wordright p:last-child {
 }
 
 .socialbar li {
-  margin: 8px 15px;
+  margin: 0.5rem 1rem;
 }
 
 .socialbar p {
-  flex: 1 350px;
+  flex: 1 21.87rem;
   align-self: center;
   color: gray;
 }
@@ -391,7 +391,7 @@ div.wordright p:last-child {
 }
 
 .phantom {
-  flex: 1 350px;
+  flex: 1 21.87rem;
 }
 
 /*  contacts  */
@@ -446,7 +446,7 @@ div.wordright p:last-child {
   display: flex;
   align-items: center;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.2rem;
 }
 
 .footlinks6 {
@@ -469,23 +469,131 @@ footer li {
 }
 
 .contacts p {
-  margin-bottom: 6px;
+  margin-bottom: 0.4rem;
   font-weight: 900;
 }
 /* final button */
 .upsite {
-  border-radius: 100px;
+  border-radius: 6.25rem;
   background-color: rgb(87, 2, 245);
   color: white;
-  padding: 20px;
-  padding-top: 18px;
+  padding: 1.2rem;
+  padding-top: 1.1rem;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 1.2rem;
+  right: 1.2rem;
   border: 1px solid transparent;
 }
 
 .upsite:hover {
   cursor: pointer;
   background-color: rgba(87, 2, 245, 0.5);
+}
+
+/* media queries */
+
+@media all and (max-width: 815px) {
+
+  /*bar 1 e 2 */
+
+  img[alt="Search icon"], img[alt="login"], img[alt="Ubisoft logo"]{
+    display: none;
+  }
+
+  .mainbar li{
+    padding: 15px;
+  }
+
+  .mainbar{
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bar2 ul{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: unset;
+  }
+
+  .bar2 li{
+    padding: 0px 10px;
+  }
+
+  .bar2{
+    height: auto;
+    padding-bottom: 0;
+    margin-bottom: 0px;
+
+  }
+
+  header nav{
+    position: relative;
+  }
+
+  main{
+    margin-top: 0px;
+  }
+
+  .bar3 ul{
+  flex-direction: column;
+    padding-bottom: 10px;
+    height: auto;
+  }
+
+  .bar3 li{
+    margin-bottom: 15px;
+    height: 25px;
+    line-height: 25px;
+    border: none;
+  }
+
+/*lavorare qui*/
+
+  .newscontainer {
+    flex-direction: column;
+  }
+
+  .button1{
+    padding: 0.7rem;
+    width: 10rem;
+  }
+
+
+
+  /*sec 3...*/
+
+  .expmenu h2{
+    font-size: 1.2rem;
+  }
+
+  .expandable  p{
+    font-size: 1rem;
+  }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+@media all and (max-width: 436px) {
+
+  /*bar 1 e 2 */
+  .mainbar ul{
+    flex-direction: column;
+
+  }
+
+  .bar2 ul{
+  flex-direction: column;
+  gap: 0.5rem;
+  }
+
 }
