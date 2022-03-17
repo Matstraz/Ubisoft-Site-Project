@@ -1,4 +1,14 @@
 /* !! GENERAL */
+@font-face {
+  font-family: Ubisoft Sans;
+  src: url(/Ubisoft-font/fonts/ubisoftsans-regular.otf);
+}
+@font-face {
+  font-family: Ubisoft Sans;
+  font-weight: bold;
+  src: url(/Ubisoft-font/fonts/ubisoftsans-bold.otf);
+}
+
 html {
   font-size: 62.5%; /* 10 px */
 }
@@ -7,6 +17,7 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Ubisoft Sans', sans-serif;
 }
 
 .section__body {
@@ -97,9 +108,6 @@ html {
 .nav__buttons {
   position: relative;
   display: flex;
-}
-
-.dropdown {
   position: relative;
 }
 
@@ -108,8 +116,7 @@ html {
   position: absolute;
   top: 49px;
   left: 50%;
-  width: 20rem;
-  height: 20rem;
+  width: 90vw;
   background-color: white;
   color: black;
   transform: translate(-50%);
@@ -119,6 +126,46 @@ html {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.dropdown_content-text {
+  display: flex;
+}
+
+.content_text-sm {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  gap: 2rem;
+}
+
+.h3-sm {
+  width: 90%;
+  padding: 1rem 0;
+  border-bottom: 2px solid lightgray;
+}
+
+.h4-sm {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.content_text-lg {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.h3-l {
+  width: 90%;
+  padding: 1rem 0;
+}
+
+.dropdown_buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20%;
+  margin-top: 2rem;
 }
 
 /* !!END NAV */
@@ -461,7 +508,7 @@ color: white; */
   font-size: 1.5rem;
 }
 
-.container__connect button {
+.btn-blue {
   background-color: #006ef5;
   color: white;
   border-radius: 30px;
@@ -472,7 +519,7 @@ color: white; */
   font-size: 1.5rem;
 }
 
-.container__connect button:hover {
+.btn-blue:hover {
   background-color: white;
   color: #006ef5;
   border: 0.3rem solid #006ef5;
@@ -790,6 +837,15 @@ footer {
   .icon-ubisoft-logo-footer {
     display: none;
   }
+
+  .choose_language {
+    padding: 2rem 4rem;
+  }
+
+  .choose_language label {
+    margin-left: 0;
+    margin-top: 0;
+  }
 }
 /** versione mobile */
 
@@ -1003,5 +1059,15 @@ footer {
 
   .triangle-down {
     display: none;
+  }
+
+  .choose_language {
+    width: 100%;
+    height: 100%;
+  }
+
+  .choose_language label {
+    margin-left: -30rem;
+    margin-top: -10rem;
   }
 }
