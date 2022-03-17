@@ -496,6 +496,7 @@ color: white; */
 
 footer {
   background-color: rgb(29, 30, 34);
+  position: relative;
 }
 
 .nav__footer {
@@ -540,6 +541,51 @@ footer {
   gap: 1rem;
   color: white;
   font-size: 2rem;
+}
+#language {
+  display: none;
+}
+#close_language {
+  display: none;
+}
+.choose_language {
+  right: 0;
+  width: 30%;
+  background-color: black;
+  height: 100vh;
+
+  position: absolute;
+  bottom: 0;
+  display: none;
+  overflow: scroll;
+  padding: 6rem 10rem;
+}
+
+.choose_language h3 {
+  border-bottom: 0.1rem solid gray;
+  margin-bottom: 2rem;
+}
+.choose_language ul {
+  margin-bottom: 2rem;
+}
+.choose_language li {
+  list-style-type: '>  ';
+  font-size: 1.4rem;
+  color: rgb(155, 155, 155);
+}
+.choose_language li:hover {
+  color: coral;
+  cursor: pointer;
+}
+.choose_language label {
+  margin-left: -7rem;
+  margin-top: -10rem;
+}
+#language:checked ~ .choose_language {
+  display: block;
+}
+.choose_language + #close_language:checked .choose_language {
+  display: none;
 }
 
 .icon-glob {
@@ -747,7 +793,7 @@ footer {
 }
 /** versione mobile */
 
-@media screen and (max-width: 500px) and (min-width: 0px) {
+@media screen and (max-width: 430px) {
   .nav__top {
     flex-flow: row-reverse;
   }
@@ -800,17 +846,17 @@ footer {
     align-items: flex-end;
   }
 
-  .button-bottom-container button {
+  /*   .button-bottom-container button {
     font-size: 1rem;
     font-weight: 600;
     padding-bottom: 2rem;
     display: flex;
     justify-content: center;
-  }
-
+  } */
   #rainbow-logo {
     display: flex;
-    padding-bottom: 0.2rem;
+    /*     padding-bottom: 0.2rem;
+ */
     width: 15rem;
   }
 
@@ -830,7 +876,7 @@ footer {
   }
 
   .mobile_container_carousel picture {
-    width: 16rem;
+    width: 40%;
   }
 
   .nav__latn {
@@ -847,6 +893,9 @@ footer {
 
   .section__body {
     gap: 2rem;
+  }
+  .section__body h2 {
+    text-align: center;
   }
 
   .container__store {
