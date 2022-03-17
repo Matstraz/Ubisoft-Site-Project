@@ -18,6 +18,7 @@ body {
   background-color: #242424;
   align-items: center;
   justify-content: space-between;
+  overflow-y: hidden;
 }
 
 #ubisoft_logo {
@@ -43,6 +44,9 @@ body {
   width: 100%;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  top: 0%;
+  z-index: 55;
 }
 
 .header_black h1 {
@@ -132,45 +136,52 @@ body {
 
 /* ! HERO 1 */
 
-.bg_img1{
+.bg_img1 {
   height: 100vh;
   width: 100%;
   display: flex;
-  background: linear-gradient(90deg, rgba(64,20,28,1) 15%, rgba(53,11,41,1) 34%);
+  background: linear-gradient(
+    90deg,
+    rgba(64, 20, 28, 1) 15%,
+    rgba(53, 11, 41, 1) 34%
+  );
 }
 
-.background_1-1{
+.background_1-1 {
   margin-left: 587px;
 }
 
-.background_1-2{
-position: absolute ;
+.background_1-2 {
+  position: absolute;
 }
 
-.bg_img1_text{
-  position: absolute ;
+.bg_img1_text {
+  position: absolute;
   margin-top: 100px;
   margin-left: 150px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  display:flex;
-  flex-direction:column;
+  display: flex;
+  flex-direction: column;
 }
 
-.first-text h1{
+.first-text h1 {
   font-size: xxx-large;
 }
 
-.first-button{
+.first-button {
   /* position: absolute; */
-  background: linear-gradient(115.01deg, rgb(228, 150, 33) 5.43%, rgb(222, 22, 79) 100%);
+  background: linear-gradient(
+    115.01deg,
+    rgb(228, 150, 33) 5.43%,
+    rgb(222, 22, 79) 100%
+  );
   font-weight: 900;
   border-radius: 20px;
   padding: 0.6em 40px 0.8em 40px;
   border: none;
-
 }
 
-.images_above_bg_1{
+.images_above_bg_1 {
   position: absolute;
   border: 0px;
   padding: 0px;
@@ -180,7 +191,7 @@ position: absolute ;
   border-radius: 10px;
 }
 
-img [src="images/farcry.png"]{
+img [src="images/farcry.png"] {
   border-radius: 10px;
   padding: 0px;
   margin: 0px;
@@ -194,7 +205,8 @@ img [src="images/farcry.png"]{
   background-position: center;
   background-color: #0a1626;
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
+  max-width: 100%;
   flex-direction: column;
   justify-content: start;
   align-items: center;
@@ -203,12 +215,12 @@ img [src="images/farcry.png"]{
 .bg_img2_text {
   text-align: center;
   width: 50%;
+  margin-top: 2.5em;
 }
 
 .bg_img2_text h1 {
   font-size: 64px;
   font-weight: 700;
-  margin-top: 2.5em;
   background: linear-gradient(90deg, #eb148a, #2824e6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -226,12 +238,12 @@ img [src="images/farcry.png"]{
 
 .bg_img2_buttons {
   margin-top: 2.5em;
+  display: flex;
 }
 
 #download_pc,
 #download_app_store,
 #google_play {
-  display: inline-flex;
   padding: 1em 1.5em 1em 1.5em;
   border-radius: 10px;
   background-color: black;
@@ -239,6 +251,7 @@ img [src="images/farcry.png"]{
   border: transparent;
   margin-right: 2em;
   margin-top: 2em;
+  cursor: pointer;
 }
 
 #download_pc {
@@ -273,9 +286,11 @@ img [src="images/farcry.png"]{
 
 .fourstackicons {
   display: flex;
+  width: 100%;
   gap: 1.8em;
   justify-content: center;
   margin-top: 3em;
+  margin-bottom: 3%;
 }
 
 /* IMAGE 1 and IMAGE TEXT */
@@ -396,7 +411,7 @@ img [src="images/farcry.png"]{
 /* HERO 3 PAGE */
 .bg-cover {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background: linear-gradient(180deg, #0d0d0d 0.79%, rgba(13, 13, 13, 0) 23.87%),
     radial-gradient(
@@ -412,13 +427,24 @@ img [src="images/farcry.png"]{
   );
 }
 
+.bg-cover-image {
+  background: url("/images/Hero3.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50%;
+  background-position: center;
+  margin-left: 4%;
+}
+
 .bg-third__text {
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: start;
-  margin-left: 5em;
+  padding-right: 1em;
+  padding-top: 4%;
+  padding-bottom: 4%;
 }
 
 .bg-third__text h1 {
@@ -447,10 +473,10 @@ small {
   padding-bottom: 1em;
 }
 
-.bg-cover-image {
+/* .bg-cover-image {
   width: 50%;
   padding-left: 4%;
-}
+} */
 
 .bg-cover-image img {
   object-fit: cover;
@@ -462,7 +488,7 @@ small {
 
 .bg-hero4 {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background: linear-gradient(
     -30deg,
@@ -471,12 +497,22 @@ small {
   );
 }
 
+.bg-hero4-image {
+  background: url("images/4hero.svg");
+  width: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .text-circle {
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 12em;
+  padding-left: 12%;
+  padding-top: 4%;
+  padding-bottom: 4%;
 }
 
 .text-circle a {
@@ -491,26 +527,32 @@ small {
     rgba(8, 19, 34, 0.966) 30%
   );
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   align-items: center;
   justify-content: center;
 }
 
-.five_text {
+.bg_five_img {
+  background: url("images/Network-rankings.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 50%;
+  height: 650px;
+  margin-left: 8%;
+}
+
+.five-text {
   display: flex;
   flex-direction: column;
   width: 50%;
+  padding-right: 6%;
+  padding-top: 4%;
 }
 
 .five_text h3 {
   font-size: 26px;
-}
-
-.bg_five_img {
-  width: 50%;
-  margin-left: 10%;
-  margin-right: 2%;
 }
 
 .five-text h1 {
@@ -519,7 +561,8 @@ small {
   background-image: linear-gradient(90deg, #c3ff65, #32feb6);
   -webkit-background-clip: text;
   color: transparent;
-  font-size: 55px;
+  font-size: 50px;
+  white-space: nowrap;
 }
 
 .five-text h3 {
@@ -529,7 +572,7 @@ small {
 /* HERO 6 PAGE */
 .bg_six_cover {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -544,7 +587,9 @@ small {
   display: flex;
   flex-direction: column;
   width: 50%;
-  margin-left: 12em;
+  margin-left: 10em;
+  padding-right: 2%;
+  padding: 4% 0;
 }
 
 .six_text h1 {
@@ -553,17 +598,26 @@ small {
   background-image: linear-gradient(90deg, #fe451f, #ec1b40, #ae13a6, #fe451f);
   -webkit-background-clip: text;
   color: transparent;
-  font-size: 55px;
+  font-size: 45px;
 }
 
 .six_text h3 {
-  font-size: 26px;
+  font-size: 24px;
+}
+
+.six_text p {
+  font-size: 17px;
 }
 
 .six_image {
+  background: url("images/Libreria-giochi-Ubisoft.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 650px;
   width: 50%;
   padding-left: 4%;
-  margin-right: 10em;
+  margin-right: 6em;
 }
 
 /* HERO 7 PAGE */
@@ -578,6 +632,15 @@ small {
     rgba(0, 0, 0, 0.95) 20%,
     rgba(4, 13, 26, 0.95) 30%
   );
+}
+
+.seven_image {
+  background: url("images/Assassin\ Creed.png");
+  height: 500px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .seven_text {
@@ -606,6 +669,8 @@ small {
 /* FOOTER AREA */
 .first_footer {
   display: flex;
+  min-height: 10vh;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(
@@ -616,18 +681,38 @@ small {
   );
 }
 
-.first_footer h3 {
+/* .first_footer h3 {
   color: white;
-  margin-left: 60px;
-  margin-top: 20px;
+} */
+
+footer {
+  display: flex;
+  height: 20vh;
+  background-color: rgb(8, 10, 12);
 }
 
-.button_social {
-  margin-left: 180px;
+.social-text {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding-left: 4%;
+  font-size: 14px;
 }
 
-.first_footer button {
-  background-color: rgba(36, 71, 66, 1) ;
+.social-footer {
+  margin-left: 0.5em;
+}
+
+.social-footer img {
+  margin-right: 5px;
+}
+
+.button_social button {
+  margin-right: 5px;
+}
+
+/* .first_footer button {
+  background-color: rgba(36, 71, 66, 1);
   border: none;
   margin-top: -25px;
 }
@@ -678,8 +763,8 @@ small {
     rgba(36, 71, 66, 1) 0%,
     rgba(10, 22, 38, 1) 45%,
     rgba(38, 10, 36, 1) 100%
-  ); 
-}
+  );
+} */
 
 /* DEFAULT CLASSES */
 .h1_default {
