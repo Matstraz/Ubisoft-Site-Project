@@ -4,237 +4,523 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" text="text/css" href="connect.css" />
     <title>Ubisoft Connect</title>
-    <style>
-        button, .select-language select:hover{
-            cursor:pointer;
-        }
-    </style>
-</head>
-  
-<body>
-      <header>
+  </head>
+
+  <body>
+    <header>
       <nav>
         <div class="header_grey">
-          <h1>UBISOFT</h1>
-          <h2>UBISOFT2</h2>
-          <div class="header_black">
-            <h1>UBISOFT CONNECT</h1>
+          <img
+            src="/images/ubisoft_logo.png"
+            id="ubisoft_logo"
+            alt="ubisoft_image"
+          />
+          <img
+            src="/images/picture_header_grey.png"
+            id="picture_header_grey"
+            alt="login logo"
+          />
+         
+        </div>
+
+        <div class="header_black">
+          <div class="nowrap">
+            <h1>UBISOFT</h1>
+            <span>CONNECT</span>
+          </div>
+          <div class="button_inner_parent">
             <div class="navigation">
-              <a href="#"><li>About</li></a>
-              <a href="#"><li>News</li></a>
-              <a href="#"><li>Store</li></a>
-              <a href="#"><li>Ubisoft+</li></a>
-              <a href="#"><li>Support</li></a>
-              <a href="#"><li>Free Events</li></a>
-              <button type="button">Log in</button>
-              <button type="button">Download for PC</button>
+              <a href="#"
+                ><li><b>About</b></li></a
+              >
+              <a href="#"
+                ><li><b>News</b></li></a
+              >
+              <a href="#"
+                ><li><b>Store</b></li></a
+              >
+              <a href="#"
+                ><li><b>Ubisoft+</b></li></a
+              >
+              <a href="#"
+                ><li><b>Support</b></li></a
+              >
+              <a href="#"
+                ><li><b>Free Events</b></li></a
+              >
+            </div>
+
+            <div class="buttons_header_black">
+              <button type="button" id="login_button">Log in</button>
+              <button type="button" id="download_button">
+                Download for PC
+              </button>
             </div>
           </div>
         </div>
+        <!-- MENU DESKTOP  -->
+        <!-- <div class="header_black">
+          <div class="nowrap">
+            <h1>UBISOFT</h1>
+            <span>CONNECT</span>
+          </div>
+          <div class="button_inner_parent">
+            <div class="navigation">
+              <a href="#"
+                ><li><b>About</b></li></a
+              >
+              <a href="#"
+                ><li><b>News</b></li></a
+              >
+              <a href="#"
+                ><li><b>Store</b></li></a
+              >
+              <a href="#"
+                ><li><b>Ubisoft+</b></li></a
+              >
+              <a href="#"
+                ><li><b>Support</b></li></a
+              >
+              <a href="#"
+                ><li><b>Free Events</b></li></a
+              >
+            </div>
+
+            <div class="buttons_header_black">
+              <button type="button" id="login_button">Log in</button>
+              <button type="button" id="download_button">
+                Download for PC
+              </button>
+            </div>
+          </div>
+        </div> -->
       </nav>
     </header>
-  
+
     <main>
-        <section>
-            <div class="first-text">
-                <h1>New Rewards</h1>
-                <h3>Lorem ipsum, dolor sit amet 
-                    consectetur adipisicing elit. 
-                    Quaerat, quidem perferendis. 
-                    Corporis, cumque. Eveniet ipsum 
-                    error quod earum autem, eum soluta 
-                    omnis. Tempore nulla ad, illum quo 
-                    optio blanditiis reiciendis!</h3>
-                    <button class="first-button">Reedem now</button>
+      <!-- !HERO 1 PAGE -->
+
+      <section>
+
+        <div class="bg_img1">
+              
+            <div class="bg_img1_text"> 
+                <h1>New Rewards</h1> <br>
+                <h3>Get the Astral Blade for 100 Units!</h3> <br>
+    
+                <button class="first-button">Reedem now</button>
             </div>
-            <img src="images/farcry.png" alt="Farcry Pistol" width="250" height="150">
-            <img src="images/rainbow.png" alt="Rainbow Soldier" width="250" height="150">
-            <img src="images/rainbow-siege.png" alt="Rainbow Soldiers" width="250" height="150">
-            <img src="images/soldiers.png" alt="Rainbow Soldier" width="250" height="150">
-            <div class="second-text">
-                <h1>Passionate players make games better</h1>
-                <p>Ubisoft Connect is the ecosystem of players
-                    services for Ubisoft games across all platforms.
-                    It aims at giving the best environment for all
-                    players to enjoy their games and connect with
-                    each other whatever the device.</p>
-                <p>Ubisoft Connect is a free service available on 
-                    all devices. You can access it on your PC, through 
-                    a mobile app, or on console directly from your games. 
-                    All you need to login is a <a href="#">Ubisoft Account</a>!</p>
+
+            <div class="background_1-2">
+                <img src="images/blue-circle.png" alt="blue circle" type="img/png" height="225">
             </div>
-            <div class="buttons">
-                <button type="button">Download for PC</button>
-                <button type="button">Download on the App Store</button>
-                <button type="button">GET IT ON Google Play</button>
-            </div>
-         
-            <figure>
         
-                <img src="icons/user-icon.png" alt="Trulli" height="40">
-                <figcaption>One network for all players</figcaption>
+            <div class="images_above_bg_1">
+                <img src="images/farcry.png" alt="Farcry Pistol" width="250" height="150">
+                <img src="images/rainbow.png" alt="Rainbow Soldier" width="250" height="150">
+                <img src="images/rainbow-siege.png" alt="Rainbow Soldiers" width="250" height="150">
+                <img src="images/soldiers.png" alt="Rainbow Soldier" width="250" height="150">
+            </div>
+
+            <div class="background_1-1">
+                <img src="images/Assassin Creed 2.png" alt="Background 1" type="img/png" height="550">
+            </div>
             
-                <img src="icons/gift-icon.png" alt="Trulli" height="40">
-                <figcaption>Endless celebration</figcaption>
-  
-                <img src="icons/analytics-icon.png" alt="Trulli" height="40">
-                <figcaption>Know more and improve</figcaption>
-  
-                <img src="icons/mouse-icon.png" alt="Trulli" height="40">
-                <figcaption>Enhance your experience on PC</figcaption>
-              
-             </figure>
-                 
-                <div class="third-text"> 
-                  <h4> ONE GLOBAL ECOSYSTEM </h4> 
-                  <h1> One network for all players </h1>
-                  <h3> Connect with players across all platforms, for all games </h3>
-  
-                    <p>Whether you play on PC or console, 
-                    you'll be part of a global network of <br> Ubisoft players with access to 
-                    all the same services. Regular updates will <br> provide you with more ways 
-                    to interact with an ever-growing community. <br>
-                    Find friends on all platforms, see what they're playing,
-                     and check their <br> achievements. </p>
-  
-                     <h3>Keep your progression on all devices</h3>
-                     
-                     <p>
-                     For our newest releases*, all your game progression is saved within <br>
-                     Ubisoft Connect, so you won't lose a step if you change consoles 
-                     or switch<br> to PC.
-                    </p>
-  
-                    <p> <small>*Hyper Scape, Assassin's Creed Valhalla, 
-                      Immortals Fenyx Rising, Riders Republic </small> </p>
-  
-                    <img src="images/ubisoft-connect.png" alt="connessione tra utenti ubisoft" height="500">  
-                </div> 
-              
-                <div class="circle-image">
-                  <div class="text-circle">
-                    <h4>OUR LOYALTY PROGRAM</h4>
-                    <h1>Endless celebration</h1>
-                    <h3>Win more</h3>
-                    <p> Over 1000 free rewards are available across our back catalogue of games. <br>
-                        On our latest titles, unlock legendary weapons, character outfits, emotes, and consumables<br>
-                        just by playing your games. Every time you level up in Ubisoft Connect, you'll earn<a href="#"> Units </a> you <br>
-                        can spend on unique rewards. <br>          
-                        Learn more about our loyalty program <a href="#"> here </a> .</p>
-                    
-                    <p><b> 20% off the Ubisoft Store </b></p> 
-                    <p> Redeem 100 Units to get 20% off your next purchase in the Ubisoft Store.* </p>
-  
-                    <button type="button"> Get 20% off with $100 </button>
-  
-                    <p> <small> *Some restrictions on eligible products may apply. Please refer to the </small> <a href="#"> Terms of Use </a> . </p>
-  
-                  </div>
-                  <img src="images/circle-image.png" alt="connessione tra utenti ubisoft" height="475">  
-                </div>               
-        </section>
+        </div>
+        
+      <!-- !HERO 2 PAGE -->
+      <div class="bg_img2">
+        <div class="bg_img2_text">
+          <h1>Passionate players make games better</h1>
+          <p>
+            Ubisoft Connect is the ecosystem of players services for Ubisoft
+            games across all platforms. It aims at giving the best environment
+            for all players to enjoy their games and connect with each other
+            whatever the device.
+          </p>
+          <p>
+            Ubisoft Connect is a free service available on all devices. You can
+            access it on your PC, through a mobile app, or on console directly
+            from your games. All you need to login is a
+            <a href="#">Ubisoft Account</a>!
+          </p>
+        </div>
+        <div class="bg_img2_buttons">
+          <button id="download_pc" type="button"></button>
 
-        <section>
-            <div class="fift-text">
-                <h4>STATS AND TIPS</h4>
-                <h1>Know more and improve</h1>
-                <h3>Access your stats at any time and compare with your friends</h3>
-                <p>Keep up to date with your stats, progression and performance in your favorite games.</p>
-                <p>Compare yourself with your friends, no matter what platform they are playing on.</p>
-                <h3>Get Smart Intel to improve your next session</h3>
-                <p>Before starting your game session, get highlights of your best performances, along with some personalized tips based on your playstyle.</p>
-                <h3>Don't miss any news or events on your favorite games</h3>
-                <p>Check your feed to get all the latest news on your games: upcoming seasons, new challenges, and rewards... We'll give you everything 
-                    you need to know about the games you love.</p>
-            </div>
-            <img src="images/Network-rankings.png" alt="classifica piramidale dei giocatori" height="500">
-        </section>
+          <button id="download_app_store" type="button"></button>
 
-        <section>
-            <div class="sixth-text">
-                <h4>UBISOFT CONNECT PC</h4>
-                <h1>Enhance your experience on PC</h1>
-                <h3>Your gateway to our worlds</h3>
-                <p>Manage and start your games through the library, discover new content and download it through our desktop app with just a click. 
-                    You can gain access to the <a href="#">Ubisoft+</a> subscription service and enjoy 100+ games on PC, including our new releases and premium editions*.</p>
-                <p>Enjoy all this with your friends, group up for multiplayer sessions, and create new chats and group chats.</p>
-                <h3>Enjoy regular free week-ends and giveaways</h3>
-                <p>Try out new games by joining the many events happening on Ubisoft Connect PC, such as free week-ends and giveaways. You can also get an early peek on 
-                    select games and major updates by registering to beta events and public test servers.</p>
-                <p><small>* Where premium or special editions of the game are indicated (for example: Ultimate/Gold/Deluxe Editions), editions included in Ubisoft+ 
-                    may not include all premium content. Offer subject to change.</small></p>
-                <button type="button"> Download for PC </button>
-            </div>
-            <img src="images/Libreria-giochi-Ubisoft.png" alt="libreria-giochi-ubisoft" height="500">
-        </section>
+          <button id="google_play" type="button"></button>
+        </div>
 
-        <section>
-            <div class="download">
-                <h1>Access your Ubisoft Connect benefits anytime and anywhere</h1>
-                <h3>Console | PC | Mobile | Web</h3>
-            </div>
-            <img src="images/Assassin Creed.png" alt="assassin creed su più dispositivi" height="500">
-            <button type="button">Download for PC</button>
-            <button type="button">Download on the App Store</button>
-            <button type="button">GET IN ON Google Play</button>
-        </section>
-  </main>
-        <footer>
-            <div class="footer">
-                <h3>Follow us</h3>
-                <button type="button"><img src="images/Button Facebook.png.svg" alt="button facebook" height="40"></button>
-                <button type="button"><img src="images/Button Twitter.png.svg" alt="button twitter" height="40"></button>
-                <button type="button"><img src="images/Button Instagram.png.svg" alt="button instagram" height="40"></button>
-            </div>
+        <div class="fourstackicons">
+          <div class="image1">
+            <img src="icons/user-icon.png" />
+            <p>One network for all players</p>
+          </div>
+          <div class="image2">
+            <img src="icons/gift-icon.png" />
+            <p>Endless celebration</p>
+          </div>
+          <div class="image3">
+            <img src="icons/analytics-icon.png" />
+            <p>Know more and improve</p>
+          </div>
+          <div class="image4">
+            <img src="icons/mouse-icon.png" />
+            <p>Enhance your experience on PC</p>
+          </div>
+        </div>
+      </div>
 
-            <div class="select-language">
-                <select name="language" id="language">
-                    <option value="Český">Český</option>
-                    <option value="dancs">Dancs</option>
-                    <option value="deutsch">Deutsch</option>
-                    <option value="english-(US)">English (US)</option>
-                    <option value="english-(CA)">English (CA)</option>
-                    <option value="english-(GB)">English (GB)</option>
-                    <option value="español">Español</option>
-                    <option value="español-(MX)">Español (MX)</option>
-                    <option value="français">Français</option>
-                    <option value="français-(CA)">Français (CA)</option>
-                    <option value="italiano">Italiano</option>
-                    <option value="magyar">Magyar</option>
-                    <option value="norsk">Norsk</option>
-                    <option value="nederlans">Nederlans</option>
-                    <option value="polski">Polski</option>
-                    <option value="português">Português</option>
-                    <option value="português-(BR)">Português (BR)</option>
-                    <option value="svenska">Svenska</option>
-                    <option value="suomi">Suomi</option>
-                    <option value="türçe">Türçe</option>
-                    <option value="日本語">日本語</option>
-                    <option value="pyccкий">Pyccкий</option>
-                    <option value="yкpaїнcькa">Укpaїнcькa</option>
-                    <option value="简体中文">简体中文</option>
-                    <option value="繁體中文">繁體中文</option>
-                    <option value="한국어">한국어</option>
-                </select>
-            </div>
+      <!-- !HERO 3 PAGE -->
+      <div class="bg-cover">
+        <div class="bg-cover-image"></div>
+        <div class="bg-third__text">
+          <h4 class="h4_default">ONE GLOBAL ECOSYSTEM</h4>
+          <h1 class="h1_default">One network for all players</h1>
+          <h3 class="h3_default">
+            Connect with players across all platforms, for all games
+          </h3>
+          <p class="p_small_default">
+            Whether you play on PC or console, you'll be part of a global
+            network of <br />
+            Ubisoft players with access to all the same services. Regular
+            updates will <br />
+            provide you with more ways to interact with an ever-growing
+            community. <br />
+            Find friends on all platforms, see what they're playing, and check
+            their <br />
+            achievements.
+          </p>
+          <h3>Keep your progression on all devices</h3>
+          <p>
+            For our newest releases*, all your game progression is saved within
+            <br />
+            Ubisoft Connect, so you won't lose a step if you change consoles or
+            switch<br />
+            to PC.
+          </p>
+          <p>
+            <small class="p_small_default"
+              >*Hyper Scape, Assassin's Creed Valhalla, Immortals Fenyx Rising,
+              Riders Republic
+            </small>
+          </p>
+        </div>
+      </div>
 
-            <hr class="footer-line">
+      <!-- !HERO 4 PAGE -->
+      <div class="bg-hero4">
+        <div class="text-circle">
+          <h4 class="h4_default">OUR LOYALTY PROGRAM</h4>
+          <h1 class="h1_default">Endless celebration</h1>
+          <h3 class="h3_default">Win more</h3>
+          <p class="p_small_default">
+            Over 1000 free rewards are available across our back catalogue of
+            games. <br />
+            On our latest titles, unlock legendary weapons, character outfits,
+            emotes, and consumables<br />
+            just by playing your games. Every time you level up in Ubisoft
+            Connect, you'll earn<a href="#"> Units </a> you
+            <br />
+            can spend on unique rewards. <br />
+            Learn more about our loyalty program <a href="#"> here </a> .
+          </p>
 
-            <section>
-                <a href="#"><h3>Ubisoft.com</h3></a>
-                <a href="#"><h3>Support</h3></a>
-                <a href="#"><h3>Blog</h3></a>
-                <a href="#"><h3>Forums</h3></a>
-                <a href="#"><small>Terms of Use</small></a>
-                <a href="#"><small>Legal Information</small></a>
-                <a href="#"><small>Privacy policy</small></a>
-                <a href="#"><small>Set cookies</small></a>
-                <a href="#"><small>Licenses</small></a>
-                <a href="#"><small>Do not sell my personal information</small></a>
-                <img src="images/Privacy Certified ESRB.pgn.svg" alt="privacy certified">
-                <div class="footer-copyright"><small>© Ubisoft Entertainment. All Rights Reserved.</small></div>
-            </section>
-        </footer>
+          <p class="p_small_default"><b> 20% off the Ubisoft Store </b></p>
+          <p class="p_small_default">
+            Redeem 100 Units to get 20% off your next purchase in the Ubisoft
+            Store.*
+          </p>
+
+          <div class="cta">
+            <button class="cta_default" type="button">
+              Get 20% off with 100
+            </button>
+          </div>
+          <p>
+            <small class="p_small_default">
+              *Some restrictions on eligible products may apply. Please refer to
+              the
+            </small>
+            <a href="#"> Terms of Use </a> .
+          </p>
+        </div>
+        <div class="bg-hero4-image">
+        </div>
+      </div>
+
+      <!-- !HERO 5 PAGE -->
+      <div class="bg_five_cover">
+        <div class="bg_five_img">
+          <!-- <img
+            src="images/Network-rankings.png"
+            alt="classifica piramidale dei giocatori"
+            height="800"
+          /> -->
+        </div>
+        <div class="five-text">
+          <h4 class="h4_default">STATS AND TIPS</h4>
+          <h1>Know more and improve</h1>
+          <h3 class="h3_default">
+            Access your stats at any time and compare with your friends
+          </h3>
+          <p class="p_small_default">
+            Keep up to date with your stats, progression and performance in your
+            favorite games.
+          </p>
+          <p class="p_small_default">
+            Compare yourself with your friends, no matter what platform they are
+            playing on.
+          </p>
+          <h3 class="h3_default">
+            Get Smart Intel to improve your next session
+          </h3>
+          <p class="p_small_default">
+            Before starting your game session, get highlights of your best
+            performances, along with some personalized tips based on your
+            playstyle.
+          </p>
+          <h3 class="h3_default">
+            Don't miss any news or events on your favorite games
+          </h3>
+          <p class="p_small_default">
+            Check your feed to get all the latest news on your games: upcoming
+            seasons, new challenges, and rewards... We'll give you everything
+            you need to know about the games you love.
+          </p>
+        </div>
+      </div>
+
+      <!-- !HERO 6 PAGE -->
+      <div class="bg_six_cover">
+        <div class="six_text">
+          <h4 class="h4_default">UBISOFT CONNECT PC</h4>
+          <h1>Enhance your experience on PC</h1>
+          <h3 class="h3_default">Your gateway to our worlds</h3>
+          <p class="p_small_default">
+            Manage and start your games through the library, discover new
+            content and download it through our desktop app with just a click.
+            You can gain access to the
+            <a class="a_default" href="#">Ubisoft+</a> subscription service and
+            enjoy 100+ games on PC, including our new releases and premium
+            editions*.
+          </p>
+          <p class="p_small_default">
+            Enjoy all this with your friends, group up for multiplayer sessions,
+            and create new chats and group chats.
+          </p>
+          <h3 class="h3_default">Enjoy regular free week-ends and giveaways</h3>
+          <p class="p_small_default">
+            Try out new games by joining the many events happening on Ubisoft
+            Connect PC, such as free week-ends and giveaways. You can also get
+            an early peek on select games and major updates by registering to
+            beta events and public test servers.
+          </p>
+          <p class="p_small_default">
+            <small
+              >* Where premium or special editions of the game are indicated
+              (for example: Ultimate/Gold/Deluxe Editions), editions included in
+              Ubisoft+ may not include all premium content. Offer subject to
+              change.</small
+            >
+          </p>
+          <div class="cta">
+            <button class="cta_default" type="button">Download for PC</button>
+          </div>
+        </div>
+        <div class="six_image"></div>
+      </div>
+
+      <div class="bg_seven_cover">
+        <div class="seven_text">
+          <h1>Access your Ubisoft Connect benefits anytime and anywhere</h1>
+          <h3>Console | PC | Mobile | Web</h3>
+        </div>
+        <div class="seven_image">
+          <!-- <img
+            src="images/Assassin Creed.png"
+            alt="assassin creed su più dispositivi"
+            height="500"
+          /> -->
+        </div>
+        <div class="cta_seven">
+          <button id="download_pc" type="button"></button>
+          <button id="download_app_store" type="button"></button>
+          <button id="google_play" type="button"></button>
+        </div>
+      </div>
+    </main>
+
+<footer class="footer1">
+  <div class="social-text">
+    <span><h1>Follow us</h1></span>
+    <div class="social-footer">
+      <img src="images/Button Facebook.png.svg" height="24" class="social-btn"><a href="#"></a></img>
+      <img src="images/Button Twitter.png.svg" height="24" class="social-btn"><a href="#"></a></img>
+      <img src="images/Button Instagram.png.svg" height="24" class="social-btn"><a href="#"></a></img>
+    </div>
+  </div>
+  <div class="select-language">
+    <select name="language" id="language">
+      <option value="Český">Český</option>
+      <option value="dancs">Dancs</option>
+      <option value="deutsch">Deutsch</option>
+      <option value="english-(US)">English (US)</option>
+      <option value="english-(CA)">English (CA)</option>
+      <option value="english-(GB)">English (GB)</option>
+      <option value="español">Español</option>
+      <option value="español-(MX)">Español (MX)</option>
+      <option value="français">Français</option>
+      <option value="français-(CA)">Français (CA)</option>
+      <option value="italiano">Italiano</option>
+      <option value="magyar">Magyar</option>
+      <option value="norsk">Norsk</option>
+      <option value="nederlands">Nederlands</option>
+      <option value="polski">Polski</option>
+      <option value="português">Português</option>
+      <option value="português-(BR)">Português (BR)</option>
+      <option value="svenska">Svenska</option>
+      <option value="suomi">Suomi</option>
+      <option value="türçe">Türçe</option>
+      <option value="日本語">日本語</option>
+      <option value="pyccкий">Pyccкий</option>
+      <option value="yкpaїнcькa">Укpaїнcькa</option>
+      <option value="简体中文">简体中文</option>
+      <option value="繁體中文">繁體中文</option>
+      <option value="한국어">한국어</option>
+    </select>
+  </div>
+</footer>
+
+<footer class="footer2">
+  <div class="footer-icon">
+    <img
+      src="images/Privacy Certified ESRB.pgn.svg"
+      alt="privacy certified"
+    />
+    <div class="footer-container">
+    <nav class="footer-nav-1">
+      <ul>
+        <li><a href="#">Ubisoft.com</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Forums</a></li>
+  </ul>
+  </nav>
+
+
+  <nav class="footer-nav-2">
+    <ul>
+      <li><a href="#">Terms of Use</a></li>
+      <li><a href="#">Legal Information</a></li>
+      <li><a href="#">Privacy policy</a></li>
+      <li><a href="#">Set cookies</a></li>
+      <li><a href="#">Licenses</a></li>
+      <li><a href="#">Do not sell my personal information</a></li>
+
+</ul>
+</nav>
+<div class="footer-last-text">
+  <p>© Ubisoft Entertainment. All Rights Reserved.</p>
+</div>
+</div>
+</div>
+
+
+  
+
+  
+</footer>
+
+
+
+    <!-- !FOOTER -->
+    <!-- <footer>
+      <div class="first_footer">
+        <div class="text-buttons">
+          <h3>Follow us</h3>
+          <div class="button_social">
+            <button type="button">
+              <img
+                src="images/Button Facebook.png.svg"
+                alt="button facebook"
+                height="20"
+              />
+            </button>
+            <button type="button">
+              <img
+                src="images/Button Twitter.png.svg"
+                alt="button twitter"
+                height="20"
+              />
+            </button>
+            <button type="button">
+              <img
+                src="images/Button Instagram.png.svg"
+                alt="button instagram"
+                height="20"
+              />
+            </button>
+          </div>
+        </div>
+
+        <div class="select-language">
+          <select name="language" id="language">
+            <option value="Český">Český</option>
+            <option value="dancs">Dancs</option>
+            <option value="deutsch">Deutsch</option>
+            <option value="english-(US)">English (US)</option>
+            <option value="english-(CA)">English (CA)</option>
+            <option value="english-(GB)">English (GB)</option>
+            <option value="español">Español</option>
+            <option value="español-(MX)">Español (MX)</option>
+            <option value="français">Français</option>
+            <option value="français-(CA)">Français (CA)</option>
+            <option value="italiano">Italiano</option>
+            <option value="magyar">Magyar</option>
+            <option value="norsk">Norsk</option>
+            <option value="nederlans">Nederlans</option>
+            <option value="polski">Polski</option>
+            <option value="português">Português</option>
+            <option value="português-(BR)">Português (BR)</option>
+            <option value="svenska">Svenska</option>
+            <option value="suomi">Suomi</option>
+            <option value="türçe">Türçe</option>
+            <option value="日本語">日本語</option>
+            <option value="pyccкий">Pyccкий</option>
+            <option value="yкpaїнcькa">Укpaїнcькa</option>
+            <option value="简体中文">简体中文</option>
+            <option value="繁體中文">繁體中文</option>
+            <option value="한국어">한국어</option>
+          </select>
+        </div>
+      </div>
+      <div class="second_footer">
+        <div class="footer_icon">
+          <img
+            src="images/Privacy Certified ESRB.pgn.svg"
+            alt="privacy certified"
+          />
+        </div>
+        <div class="section">
+          <a href="#"><h3>Ubisoft.com</h3></a>
+          <a href="#"><h3>Support</h3></a>
+          <a href="#"><h3>Blog</h3></a>
+          <a href="#"><h3>Forums</h3></a>
+          <a href="#"><small>Terms of Use</small></a>
+          <a href="#"><small>Legal Information</small></a>
+          <a href="#"><small>Privacy policy</small></a>
+          <a href="#"><small>Set cookies</small></a>
+          <a href="#"><small>Licenses</small></a>
+          <a href="#"><small>Do not sell my personal information</small></a>
+
+          <small class="reserved">© Ubisoft Entertainment. All Rights Reserved.</small>
+        </div>
+      </div>
+    </footer> -->
   </body>
 </html>
